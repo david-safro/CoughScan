@@ -1,0 +1,39 @@
+main {
+    margin-top: 10rem;
+    width: calc(100% - 40rem);
+    padding-inline: 20rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+main > div > h1 {
+    font-size: 10rem;
+    font-weight: 600;
+}
+
+main > div > p {
+    font-size: 4rem;
+}
+
+main > img {
+    background-color: var(--secondary);
+    width: 50rem;
+    height: 60rem;
+    border-radius: 15px;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    border-radius: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 1.5rem;
+    background-color: var(--secondary);
+}

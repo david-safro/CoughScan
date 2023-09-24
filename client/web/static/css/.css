@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --secondary: #9f84ff;
+}
+
+body {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+}
