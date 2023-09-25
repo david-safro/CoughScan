@@ -9,7 +9,7 @@ main {
     width: calc(100% - 20rem);
     padding-inline: 10rem;
     display: flex;
-    position: absolute;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
