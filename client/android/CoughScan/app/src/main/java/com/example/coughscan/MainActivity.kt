@@ -17,5 +17,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CoughActivity::class.java)
             startActivity(intent)
         };
+
+        symptomsNavButton.setOnClickListener {
+            val intent = Intent(this, SymptomsActivity::class.java)
+            startActivity(intent)
+        };
     }
 }

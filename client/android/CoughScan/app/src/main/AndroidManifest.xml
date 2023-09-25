@@ -25,6 +25,11 @@
             android:name=".CoughActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".SymptomsActivity"
+            android:exported="true">
+        </activity>
     </application>
-
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>
