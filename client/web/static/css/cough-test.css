@@ -73,9 +73,10 @@
     cursor: pointer;
 }
 
-#record-button.recording {
+#record.recording #record-button {
     background-image: url("/img/stop_rec.svg");
     background-size: 40%;
+    background-color: #cf3446;
 }
 
 #record-button:hover { filter: brightness(105%); }
@@ -95,6 +96,10 @@
     left: 50%;
     top: 50%;
     animation: record-button-effect 2s infinite;
+}
+
+#record.recording #record-button-effect {
+    background-color: #cf3446;
 }
 
 #description {

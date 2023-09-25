@@ -1,8 +1,11 @@
 <script lang="ts">
+    import axios from 'axios';
+
     let mediaRecorder: MediaRecorder | null = null;
     let chunks: BlobPart[] = [];
     let audioURL: string = "";
     let recording: boolean = false;
+    let audioBlob: Blob | null = null;
 
     export async function handleRecordButtonClick() {
         if (recording) {
@@ -15,7 +18,9 @@
     }
 
     export function startRecording() {
-        document.getElementById("record-button")!.className = "recording";
+        document.getElementById("record")!.className = "recording";
+
+        chunks = [];
 
         navigator.mediaDevices
             .getUserMedia({ audio: true })
@@ -28,9 +33,8 @@
                 };
 
                 mediaRecorder.onstop = () => {
-                    const audioBlob = new Blob(chunks, { type: 'audio/webm' });
+                    audioBlob = new Blob(chunks, { type: 'audio/webm' });
                     audioURL = URL.createObjectURL(audioBlob);
-                    chunks = [];
                     showModal();
                 };
 
@@ -49,7 +53,7 @@
     }
 
     export function showModal() {
-        document.getElementById("record-button")!.className = "";
+        document.getElementById("record")!.className = "";
         const modal = document.getElementById("modal");
         if (modal) {
             modal.className = "visible";
@@ -64,6 +68,21 @@
             modal.className = "invisible";
         }
     }
+
+    export function postCough() {
+        axios
+        .post("http://143.42.118.185:5000/upload", audioBlob, {
+            headers: {
+                'Content-Type': 'audio/webm'
+            }
+        })
+        .then((response) => {
+                console.log(response.data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    }
 </script>
 
 <link rel="stylesheet" href="/css/cough-test.css"/>
@@ -76,7 +95,7 @@
         </p>
         <div>
             <button on:click={hideModal}>Cancel</button>
-            <button>Submit</button>
+            <button on:click={() => {hideModal(); postCough()}}>Submit</button>
         </div>
     </div>
     <div id="record">
