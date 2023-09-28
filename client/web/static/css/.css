@@ -5,9 +5,33 @@
     padding: 0;
 }
 
+@media (max-width: 2100px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1850px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1600px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1350px) {
+    :root {
+        font-size: 8px;
+    }
+}
+
 :root {
+    --secondary-light: #f9f7ff;
     --secondary: #9f84ff;
-    --secondary-dark: #3314a3;
 }
 
 body {
@@ -16,4 +40,10 @@ body {
     width: 100%;
     position: absolute;
     font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+#fade-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }

@@ -93,6 +93,9 @@
         <p>
             Listen back to the audio to make sure you captured the cough clearly. Press cancel to re-record it.
         </p>
+        <li>
+            
+        </li>
         <div>
             <button on:click={hideModal}>Cancel</button>
             <button on:click={() => {hideModal(); postCough()}}>Submit</button>
