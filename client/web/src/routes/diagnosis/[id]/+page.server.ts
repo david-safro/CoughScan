@@ -18,7 +18,7 @@ export async function load({ params }) {
     };
 
     return {
-        diagnosisInfo: diagnosisInfo,
-        userOptions: userOptions
+        diagnosisInfo,
+        userOptions
     }
 }

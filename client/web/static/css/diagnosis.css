@@ -114,3 +114,7 @@
 #info {
     padding: 2rem;
 }
+
+#info > a {
+    color: var(--secondary);
+}

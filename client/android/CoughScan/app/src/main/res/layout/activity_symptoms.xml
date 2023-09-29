@@ -9,6 +9,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit Symptoms"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="125dp" />
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="56dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

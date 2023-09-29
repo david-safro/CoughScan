@@ -16,16 +16,34 @@ class CoughActivity : AppCompatActivity() {
     private var recording: Boolean = false;
     private var mediaRecorder: MediaRecorder? = null
     private var mediaPlayer: MediaPlayer? = null
-    private val audioFilePath: String by lazy {
-        "${Environment.getExternalStorageDirectory().absolutePath}/recording.3gp"
-    }
+    private var fileName: String? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cough)
 
+        fileName = "${externalCacheDir?.absolutePath}/audiorecordtest.3gp"
         requestPermissions()
         initializeRecord()
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        if (requestCode == 0) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED &&
+                grantResults[1] == PackageManager.PERMISSION_GRANTED
+            ) {
+                // Both permissions granted, you can start recording here.
+            } else {
+                finish()
+            }
+        }
     }
 
     private fun requestPermissions() {
@@ -57,7 +75,7 @@ class CoughActivity : AppCompatActivity() {
         mediaRecorder?.setAudioSource(MediaRecorder.AudioSource.MIC)
         mediaRecorder?.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
         mediaRecorder?.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
-        mediaRecorder?.setOutputFile(audioFilePath)
+        mediaRecorder?.setOutputFile(fileName)
 
         try {
             mediaRecorder?.prepare()
@@ -76,7 +94,7 @@ class CoughActivity : AppCompatActivity() {
     private fun playRecording() {
         mediaPlayer = MediaPlayer()
         try {
-            mediaPlayer?.setDataSource(audioFilePath)
+            mediaPlayer?.setDataSource(fileName)
             mediaPlayer?.prepare()
             mediaPlayer?.start()
         } catch (e: IOException) {

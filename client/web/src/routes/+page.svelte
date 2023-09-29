@@ -8,12 +8,21 @@
 </script>
 
 <link rel="stylesheet" href="/css/home.css"/>
-<div>
+
+<div class="bg">
+    <div class="gradient"></div>
+    <img class="plot" src="/img/plot.svg"/>
+</div>
+<div class="left-container">
     <h1>
-        Do I have Covid?
-     </h1>
+        Detect Covid
+    </h1>
+    <h2>With just a cough</h2>
     <p>
-        Try two tests to get an estimate
+        Rapidly improving AI technology now allows the diagnosis<br>of covid from a cough with an accuracy of 85%,<br>and it is only getting better. Try it out yourself now
+    </p>
+    <p>
+        Additionally, you can input your symptoms directly<br>which can diagnose Covid with a 97.7% accuracy
     </p>
     <div>
         <button on:click={navigateToCoughTest}>
@@ -24,4 +33,3 @@
         </button>
     </div>
 </div>
-<img />

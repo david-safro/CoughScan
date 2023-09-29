@@ -62,7 +62,7 @@
             </ul>
             <div id="info">
                 <p>
-                    Ensure the information entered above is accurate. If it isn't, take the test again.
+                    Ensure the information entered above is accurate. If it isn't, <a href="/cough-test">take the test again.</a>
                 </p>
             </div>
         </div>
