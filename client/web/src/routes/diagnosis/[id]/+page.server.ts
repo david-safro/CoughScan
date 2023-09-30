@@ -6,10 +6,11 @@ export async function load({ params }) {
 
     const diagnosisInfo: DiagnosisInfo = {
         diagnosis: true,
-        certainty: 76.5
+        certainty: 76.5,
+        type: "cough"
     };
 
-    const userOptions: UserOptions = {
+    const coughTestOptions: CoughTestOptions = {
         age: 16,
         sex: "male",
         respiratoryCondition: "",
@@ -17,8 +18,13 @@ export async function load({ params }) {
         healthStatus: ""
     };
 
+    const symptomInputOptions: SymptomInputOptions = {
+
+    }
+
     return {
         diagnosisInfo,
-        userOptions
+        coughTestOptions,
+        symptomInputOptions
     }
 }

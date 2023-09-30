@@ -23,7 +23,7 @@
 </div>
 <div class="left-container">
     <h1>
-        Detect Covid
+        Detect Covid<img src="/img/logo.svg"/>
     </h1>
     <h2>With just a cough</h2>
     <p>

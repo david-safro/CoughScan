@@ -1,4 +1,4 @@
-export const userOptionLabels = [
+export const coughTestOptionLabels = [
     "Age",
     "Sex",
     "Respiratory Condition",

@@ -1,19 +1,21 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { userOptionLabels } from "$lib/userOptions";
+  import { coughTestOptionLabels } from "$lib/coughTestOptions";
+  import { symptomInputOptionLabels } from "$lib/symptomInputOptions";
   import type { PageData } from "./$types";
 
     export let data: PageData
     let diagnosisInfo: DiagnosisInfo = data.diagnosisInfo;
 
-    let userOptions: UserOptions = data.userOptions;
-    let userOptionInfo: Array<Array<any>> = []
+    let options: CoughTestOptions | SymptomInputOptions = diagnosisInfo.type == "cough" ? data.coughTestOptions : data.symptomInputOptions;
+    let info: Array<Array<any>> = []
+    let labels = diagnosisInfo.type == "cough" ? coughTestOptionLabels : symptomInputOptionLabels;
 
     function populateUserOptions() {
         let i = 0;
-        for (const value of Object.values(userOptions)) {
-            if (i > userOptionLabels.length) return;
-            userOptionInfo[i] = [userOptionLabels[i], value];
+        for (const value of Object.values(options)) {
+            if (i > labels.length) return;
+            info[i] = [labels[i], value];
             i++;
         }
     }
@@ -54,9 +56,9 @@
         </div>
         <div id="right">
             <ul id="user-options">
-                {#each userOptionInfo as userOption}
+                {#each info as option}
                     <li>
-                        <span><b>{userOption[0]}: </b>{userOption[1]}</span>
+                        <span><b>{option[0]}: </b>{option[1]}</span>
                     </li>
                 {/each}
             </ul>

@@ -6,7 +6,8 @@ declare global {
 		// interface Locals {}
 		interface PageData {
 			diagnosisInfo: DiagnosisInfo
-			userOptions: UserOptions
+			coughTestOptions?: CoughTestOptions
+			symptomInputOptions?: SymptomInputOptions
 		}
 		// interface Platform {}
 	}

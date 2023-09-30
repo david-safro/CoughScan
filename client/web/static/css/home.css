@@ -82,6 +82,11 @@ main {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.left-container > h1 > img {
+    width: 2rem;
+    display: inline;
+}
+
 .left-container > h2 {
     font-size: 3rem; 
     color: #444;
