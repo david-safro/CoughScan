@@ -1,17 +1,25 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
     export function navigateToInputSymptoms() {
         window.location.href = "/input-symptoms";
     }
     export function navigateToCoughTest() {
         window.location.href = "/cough-test";
     }
+
+    onMount(() => {
+        (document.getElementsByClassName("plot-wrapper")[0] as HTMLDivElement).style.width = "100%";
+    });
 </script>
 
 <link rel="stylesheet" href="/css/home.css"/>
 
 <div class="bg">
     <div class="gradient"></div>
-    <img class="plot" src="/img/plot.svg"/>
+    <div class="plot-wrapper">
+        <img class="plot" src="/img/plot.svg"/>
+    </div>
 </div>
 <div class="left-container">
     <h1>

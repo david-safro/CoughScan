@@ -13,20 +13,31 @@
     
 }
 
-.bg > .gradient {
+.gradient {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to right, white 35%, transparent 50%);
 }
 
-.bg > .plot {
+.plot {
     height: 95rem;
-    position: absolute;
-    right: -15%;
-    bottom: -12.5%;
-    z-index: -1;
+    width: auto;
     transform: scaleX(-1);
+    position: absolute;
+    left: 30rem;
+    bottom: 0;
+}
+
+.plot-wrapper {
+    overflow: hidden;
+    transition: width 4s;
+    height: 95rem;
+    width: 60rem;
+    position: absolute;
+    z-index: -1;
     opacity: 0.8;
+    left: 0;
+    bottom: 0;
 }
 
 main {
