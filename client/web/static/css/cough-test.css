@@ -112,6 +112,7 @@
 #description > h1 {
    font-size: 4rem; 
    color: #444;
+   font-family: 'Ubuntu', sans-serif;
 }
 
 #description > p {

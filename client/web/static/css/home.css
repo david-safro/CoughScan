@@ -79,11 +79,13 @@ main {
 .left-container > h1 {
     font-size: 6rem; 
     color: #222;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .left-container > h2 {
     font-size: 3rem; 
     color: #444;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .left-container > p {
