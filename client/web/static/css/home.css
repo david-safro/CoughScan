@@ -24,8 +24,15 @@
     width: auto;
     transform: scaleX(-1);
     position: absolute;
-    left: 30rem;
+    left: 25rem;
     bottom: 0;
+}
+
+.caption {
+    position: absolute;
+    bottom: 7.5rem;
+    left: 60%;
+    color: #999;
 }
 
 .plot-wrapper {
