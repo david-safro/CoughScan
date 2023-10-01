@@ -10,6 +10,7 @@
     background-size: 4rem;
     overflow: hidden;
     background-color: var(--secondary-light);
+    user-select: none;
     
 }
 
@@ -92,6 +93,7 @@ main {
 .left-container > h1 > img {
     width: 2rem;
     display: inline;
+    opacity: 0.9;
 }
 
 .left-container > h2 {

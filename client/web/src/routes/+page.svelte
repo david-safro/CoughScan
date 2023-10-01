@@ -20,7 +20,7 @@
     <div class="plot-wrapper">
         <img class="plot" src="/img/plot.svg"/>
     </div>
-    <span class="caption">*Soundwave of a cough</span>
+    <span class="caption">Soundwave of a cough</span>
 </div>
 <div class="left-container">
     <h1>
