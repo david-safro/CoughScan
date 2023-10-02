@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { coughTestOptionLabels } from "$lib/coughTestOptions";
   import { symptomInputOptionLabels } from "$lib/symptomInputOptions";
-  import type { PageData } from "./$types";
+  import type { PageData } from "./[diagnosis]/$types";
 
     export let data: PageData
     let diagnosisInfo: DiagnosisInfo = data.diagnosisInfo;

@@ -1,13 +1,18 @@
 import { error } from "@sveltejs/kit";
+import type { PageData } from "./$types.js";
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
-    if (!params.id) throw error(404)
+    if (!params.data) throw error(404)
+
+    const test: DiagnosisInfo = {certainty:87.3,diagnosis:true,type:"cough"};
+
+    const parsedData = JSON.parse(decodeURIComponent(encodeURIComponent(JSON.stringify(test))));
 
     const diagnosisInfo: DiagnosisInfo = {
-        diagnosis: true,
-        certainty: 76.5,
-        type: "cough"
+        diagnosis: parsedData.diagnosis,
+        certainty: parseFloat(parsedData.certainty),
+        type: parsedData.type == "cough" ? "cough" : "symptoms"
     };
 
     const coughTestOptions: CoughTestOptions = {
@@ -22,9 +27,11 @@ export async function load({ params }) {
 
     }
 
-    return {
+    const pageData: PageData = {
         diagnosisInfo,
         coughTestOptions,
         symptomInputOptions
     }
+
+    return pageData;
 }
