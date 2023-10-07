@@ -2,11 +2,17 @@
     import { symptomInputOptionLabels } from "../../lib/symptomInputOptions";
 </script>
 
-<link href="/css/input-symptoms.css"/>
+<link href="/css/input-symptoms.css" rel="stylesheet"/>
+<h1>Input Symptoms</h1>
 <form>
     {#each symptomInputOptionLabels as symptomInputOptionLabel}
+    <div>
         <label>{symptomInputOptionLabel}</label>
-        <input type="text" />
+        <div>
+            <input type="checkbox" />
+            <span class="style"/>
+        </div>
+    </div>
     {/each}
     <button type="submit"></button>
 </form>
