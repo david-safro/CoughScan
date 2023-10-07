@@ -19,4 +19,7 @@ export const symptomInputOptionLabels = [
     "Do any of your family members work in public places where they come into contact with others?",
     "Do you wear a mask when you go to places where you are exposed to others?",
     "Have you been to the market recently?"
+];
+export const symptomInputOptionIdentifiers = [
+    ""
 ]
