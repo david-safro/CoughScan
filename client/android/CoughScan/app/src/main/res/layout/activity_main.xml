@@ -39,24 +39,27 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="382dp"
-        android:layout_height="270dp"
+        android:layout_height="500dp"
         android:layout_marginTop="36dp"
         android:text="To test yourself for Covid-19 now, select one of the options below."
+        app:layout_constraintBottom_toTopOf="@+id/button_nav_symptoms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintVertical_bias="0.0"
         tools:text="@string/main_desc" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="413dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="657dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="44dp"
         android:background="@color/primary_transparent"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -68,6 +71,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
