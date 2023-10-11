@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CoughScan</string>
+    <string name="main_desc">
+        To test yourself for COVID-19 with your phone, follow these steps.
+        \n\n\n
+        The symptoms test allows you to respond to a few questions and quickly get a diagnosis with a 95% accuracy. It predicts if you are sick in general, not specifically COVID-19.
+        \n\n
+        The cough test will require you to record yourself coughing, and you will receive a diagnosis with up to an 80% accuracy. For the test to be accurate you must know you are sick beforehand. If you are unsure if you are sick, try the symptoms test first.
+    </string>
 </resources>

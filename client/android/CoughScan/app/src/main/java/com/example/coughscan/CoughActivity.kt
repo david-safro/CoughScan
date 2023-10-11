@@ -23,42 +23,10 @@ class CoughActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cough)
 
-        fileName = "${externalCacheDir?.absolutePath}/audiorecordtest.3gp"
+        fileName = "${externalCacheDir?.absolutePath}/audiorecordtest.webm"
+
         requestPermissions()
         initializeRecord()
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-
-        if (requestCode == 0) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED &&
-                grantResults[1] == PackageManager.PERMISSION_GRANTED
-            ) {
-                // Both permissions granted, you can start recording here.
-            } else {
-                finish()
-            }
-        }
-    }
-
-    private fun requestPermissions() {
-        val permissions = arrayOf(
-            Manifest.permission.RECORD_AUDIO,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE
-        )
-
-        val grantedPermissions = permissions.filter {
-            ContextCompat.checkSelfPermission(this, it) == PackageManager.PERMISSION_GRANTED
-        }
-
-        if (grantedPermissions.size < permissions.size) {
-            ActivityCompat.requestPermissions(this, permissions, 0)
-        }
     }
 
     private fun initializeRecord() {
@@ -70,10 +38,26 @@ class CoughActivity : AppCompatActivity() {
         }
     }
 
+    private fun requestPermissions() {
+        val permissions = arrayOf(
+            Manifest.permission.RECORD_AUDIO,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.MANAGE_EXTERNAL_STORAGE
+        )
+
+        val permissionDenied = permissions.filter {
+            ContextCompat.checkSelfPermission(this, it) == PackageManager.PERMISSION_DENIED
+        }
+
+        if (permissionDenied.isNotEmpty()) {
+            ActivityCompat.requestPermissions(this, permissionDenied.toTypedArray(), 1)
+        }
+    }
+
     private fun startRecording() {
         mediaRecorder = MediaRecorder()
         mediaRecorder?.setAudioSource(MediaRecorder.AudioSource.MIC)
-        mediaRecorder?.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
+        mediaRecorder?.setOutputFormat(MediaRecorder.OutputFormat.WEBM)
         mediaRecorder?.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
         mediaRecorder?.setOutputFile(fileName)
 
@@ -87,6 +71,7 @@ class CoughActivity : AppCompatActivity() {
 
     private fun stopRecording() {
         mediaRecorder?.stop()
+        mediaRecorder?.reset()
         mediaRecorder?.release()
         mediaRecorder = null
     }
