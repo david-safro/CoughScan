@@ -50,8 +50,8 @@ print(f"Classification Report: \n{report}")
 print(f"Confusion Matrix: \n{conf_matrix}")
 
 
-def predict(model, input_data):
-
+def predict(input_data):
+    model = pickle.load('modelv1ADAM.pkl')
     input_tensor = torch.FloatTensor([input_data])
     model.eval()
     with torch.no_grad():
