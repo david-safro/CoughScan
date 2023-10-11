@@ -13,7 +13,8 @@ main {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
-    background-color: white;
+    background-color: rgba(256, 256, 256, 0.5);
+    backdrop-filter: blur(15px);
     z-index: 1000;
 }
 
@@ -53,26 +54,9 @@ main {
     text-decoration: none;
     color: #555;
     position: relative;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 #navbar > ul > li > a:hover {
     background-color: #f4f4f4;
-}
-
-#navbar > ul > li > a:after {
-    content: "";
-    width: calc(100% - 1rem);
-    height: 1px;
-    background-color: var(--secondary);
-    position: absolute;
-    left: 0.5rem;
-    bottom: 0.35rem;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-out;
-    border-radius: 1px;
-}
-
-#navbar > ul > li > a:hover::after {
-    transform: scaleX(100%);
 }
