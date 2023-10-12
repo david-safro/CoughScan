@@ -62,7 +62,7 @@ def predict(input_data):
 
 # sample data cuz too lazy to read from data
 input_data = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1]
-predicted_severity = predict(model, input_data)
+predicted_severity = predict(input_data)
 print(f"Predicted Severity: {predicted_severity}")
 
 
