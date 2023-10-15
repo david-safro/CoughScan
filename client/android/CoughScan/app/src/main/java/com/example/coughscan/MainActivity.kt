@@ -19,7 +19,9 @@ class MainActivity : AppCompatActivity() {
         };
 
         symptomsNavButton.setOnClickListener {
-            val intent = Intent(this, SymptomsActivity::class.java)
+            val intent = Intent(this, DiagnosisActivity::class.java)
+            intent.putExtra("certainty", 89)
+            intent.putExtra("diagnosis", true)
             startActivity(intent)
         };
     }

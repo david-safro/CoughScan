@@ -14,5 +14,5 @@
         </div>
     </div>
     {/each}
-    <button type="submit"></button>
+    <button type="submit">Submit</button>
 </form>

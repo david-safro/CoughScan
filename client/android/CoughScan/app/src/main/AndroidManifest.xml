@@ -29,6 +29,10 @@
             android:name=".SymptomsActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".DiagnosisActivity"
+            android:exported="true">
+        </activity>
     </application>
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
