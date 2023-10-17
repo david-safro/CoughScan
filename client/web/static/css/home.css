@@ -70,7 +70,7 @@ main {
 .left-container > div > button {
     width: 23rem;
     height: 5rem;
-    border-radius: 10px;
+    border-radius: 0.8rem;
     border: none;
     background-color: var(--secondary);
     color: white;

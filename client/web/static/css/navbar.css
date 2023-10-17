@@ -50,7 +50,7 @@ main {
 
 #navbar > ul > li > a {
     padding: 0.5rem;
-    border-radius: 7.5px;
+    border-radius: 0.5rem;
     text-decoration: none;
     color: #555;
     position: relative;

@@ -8,7 +8,7 @@ main > h1 {
 
 form {
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0.8rem;
     margin-top: 3rem;
     width: 80%;
     margin-inline: auto;

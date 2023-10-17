@@ -4,7 +4,7 @@
     height: 30rem;
     z-index: 1000;
     background-color: white;
-    border-radius: 40px;
+    border-radius: 2.6rem;
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     left: 50%;
     top: 50%;
@@ -42,7 +42,7 @@
     width: 6rem;
     height: 2rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.8rem;
     background-color: var(--secondary);
     color: white;
     cursor: pointer;
