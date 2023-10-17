@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { coughTestOptionLabels } from "$lib/coughTestOptions";
   import { symptomInputOptionLabels } from "$lib/symptomInputOptions";
-  import type { PageData } from "./[diagnosis]/$types";
+  import { PageData } from "./$types";
 
     export let data: PageData
     let diagnosisInfo: DiagnosisInfo = data.diagnosisInfo;
@@ -39,11 +39,25 @@
             if (i >= percent) clearInterval(interval);
         }, 1);
     }
+
+    export function saveDiagnosis() {
+        let savedDiagnosisArray = [];
+
+        const savedDiagnosis = localStorage.getItem("saved-diagnosis");
+        if (savedDiagnosis) {
+            savedDiagnosisArray = localStorage.getItem("saved-diagnosis")!.split(" ")
+        }
+
+        savedDiagnosisArray.push(JSON.stringify(PageData))
+    }
 </script>
 
 <link rel="stylesheet" href="/css/diagnosis.css"/>
 
 <div id="container">
+    <button class="save" on:click={saveDiagnosis}>
+        Save Diagnosis
+    </button>
     <div class="upper">
         <h1>Prediction: <span class={diagnosisInfo.diagnosis.toString()}>{diagnosisInfo.diagnosis ? "Positive" : "Negative"}</span></h1>
     </div>
