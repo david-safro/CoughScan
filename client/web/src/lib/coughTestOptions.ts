@@ -1,7 +1,7 @@
 export const coughTestOptionLabels = [
-    "Age",
-    "Sex",
-    "Respiratory Condition",
-    "Fever Muscle Pain",
-    "Health Status"
+    ["Age", "age"],
+    ["Sex", "sex"],
+    ["Respiratory Condition", "respiratoryCondition"],
+    ["Fever Muscle Pain", "feverMusclePain"],
+    ["Health Status", "healthStatus"]
 ]

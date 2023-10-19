@@ -48,6 +48,13 @@ form > div > div > input[type=checkbox] {
     height: 100%;
 }
 
+form > div > div > select {
+    width: 24rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
 form > button[type=submit] {
     width: 50rem;
     height: 6rem;

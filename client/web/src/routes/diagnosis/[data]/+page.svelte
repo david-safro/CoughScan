@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { coughTestOptionLabels } from "$lib/coughTestOptions";
   import { symptomInputOptionLabels } from "$lib/symptomInputOptions";
-  import { PageData } from "./$types";
+  import type { PageData } from "./$types";
 
     export let data: PageData
     let diagnosisInfo: DiagnosisInfo = data.diagnosisInfo;
@@ -15,7 +15,7 @@
         let i = 0;
         for (const value of Object.values(options)) {
             if (i > labels.length) return;
-            info[i] = [labels[i], value];
+            info[i] = [labels[i][0], value];
             i++;
         }
     }
@@ -41,14 +41,8 @@
     }
 
     export function saveDiagnosis() {
-        let savedDiagnosisArray = [];
-
-        const savedDiagnosis = localStorage.getItem("saved-diagnosis");
-        if (savedDiagnosis) {
-            savedDiagnosisArray = localStorage.getItem("saved-diagnosis")!.split(" ")
-        }
-
-        savedDiagnosisArray.push(JSON.stringify(PageData))
+        alert("Link copied to clipboard!")
+        navigator.clipboard.writeText(window.location.href)
     }
 </script>
 
