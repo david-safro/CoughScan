@@ -13,6 +13,10 @@
     --secondary-transparent: #9f84ff83;
 }
 
+.h-font {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 body {
     top: 0;
     left: 0;

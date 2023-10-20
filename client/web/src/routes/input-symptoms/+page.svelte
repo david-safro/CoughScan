@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { redirect } from "@sveltejs/kit";
     import { symptomInputOptionLabels } from "../../lib/symptomInputOptions";
     import type { PageData } from "./$types";
 
@@ -30,7 +29,8 @@
         const responseData: PageData = {
             diagnosisInfo: {
                 certainty: 84.7,
-                diagnosis: true
+                diagnosis: true,
+                type: "cough"
             },
             coughTestOptions: {
                 age: 14,
@@ -38,9 +38,12 @@
                 respiratoryCondition: "yes",
                 feverMusclePain: false,
                 healthStatus: "healthy"
+            },
+            symptomTestOptions: {
+
             }
         };
-        throw redirect(303, `/diagnosis/${encodeURIComponent(JSON.stringify(responseData))}`)
+        window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(responseData))}`
     }
 </script>
 
