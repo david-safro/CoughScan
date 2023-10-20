@@ -79,12 +79,12 @@
         </div>
     </div>
 </div>
-<div id="info">
+<div id="what-now">
     <h2 class="h-font header">What now?</h2>
     <h3 class="h-font">Your diagnosis is {diagnosisInfo.diagnosis ? "positive" : "negative"}.</h3>
     <p class="para">
         {#if diagnosisInfo.diagnosis}
-        It is likely that you have COVID-19. However, if you don't think you are sick with any virus, then the test could be less accurate. Take the symptoms test at <a href="/input-symptoms">/input-symptoms</a>. If you are still unsure about the XPathResult, take a physical Covid test. If you are sure you have Covid, make sure to quarantine yourself as much as possible to stop the spread.
+        It is likely that you have COVID-19. However, if you don't think you are sick with any virus, then the test could be less accurate. Take the symptoms test at <a href="/input-symptoms">/input-symptoms</a> to tell if you are sick. If you are still unsure about the result, take a physical Covid test. If you are sure you have Covid, make sure to quarantine yourself as much as possible to stop the spread.
         {:else}
         You likely do not have COVID-19. However, if you feel this diagnosis is innacurate you may want to retake this test to make sure, and if you are still unsure you should take a physical test.
         {/if}

@@ -24,6 +24,7 @@
     font-size: 1.1rem;
     cursor: pointer;
     transition: 0.1s;
+    border-radius: 0.5rem;
 }
 
 #container > .save:hover {
@@ -39,8 +40,8 @@
     width: 1.5rem;
     aspect-ratio: 1/1;
     position: absolute;
-    left: -0.75rem;
-    bottom: -0.75rem;
+    left: -0.5rem;
+    bottom: -0.5rem;
     border-radius: 50%;
     z-index: 2;
 }
@@ -153,4 +154,27 @@
 
 #info > a {
     color: var(--secondary);
+}
+
+#what-now {
+    margin: 3rem auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30rem;
+    width: 80%;
+    text-align: center;
+}
+
+#what-now > h2 {
+    font-size: 3rem;
+}
+
+#what-now > h3 {
+    font-size: 2rem;
+}
+
+#what-now > p {
+    margin-top: 2rem;
+    font-size: 1.75rem;
 }
