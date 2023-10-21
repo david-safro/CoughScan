@@ -1,16 +1,14 @@
-
 import warnings
+
 warnings.filterwarnings("ignore")
 
 import os, time, math
 import numpy as np
 import pandas as pd
 import zipfile, pickle, h5py, joblib, json
-
 import librosa
 import opensmile
 import tensorflow_hub as hub
-
 from math import pi
 from tqdm import tqdm
 from pathlib import Path
@@ -20,8 +18,8 @@ from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn.neighbors import NearestNeighbors
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.model_selection import StratifiedKFold, cross_val_predict, train_test_split
-from sklearn.metrics import f1_score, confusion_matrix, roc_auc_score, auc, precision_recall_curve, roc_curve, average_precision_score
-
+from sklearn.metrics import f1_score, confusion_matrix, roc_auc_score, auc, precision_recall_curve, roc_curve, \
+    average_precision_score
 from config import *
 from utils import *
 from feature import *
@@ -30,17 +28,18 @@ from model import *
 df = pd.read_csv(DIR_DATA + 'data.csv')
 df['file_path'] = df['file_cough'] + '.wav'
 df['label_symptom'] = (df['symptoms_status_choice'].map(str) != "['No']").astype(int)
-df['label_abnormal'] = ((df['symptoms_status_choice'].map(str) != "['No']") | (df['cov19_status_choice'] != 'never')).astype(int)
+df['label_abnormal'] = (
+        (df['symptoms_status_choice'].map(str) != "['No']") | (df['cov19_status_choice'] != 'never')).astype(int)
 df['label_covid'] = (df['cov19_status_choice'] != 'never').astype(int)
 
 if not os.path.exists(OUTPUT_DIR + 'FRILL.pickle'):
     X_trill_features = get_features_of_list_audio(DIR_DATA, df)
     pickle.dump({
         'X_trill_features': X_trill_features
-    }, open(OUTPUT_DIR + 'FRILL.pickle', "wb" ))
+    }, open(OUTPUT_DIR + 'FRILL.pickle', "wb"))
 else:
-    f = pickle.load(open(OUTPUT_DIR + 'FRILL.pickle', "rb" ))
-    X_trill_features     = f['X_trill_features']
+    f = pickle.load(open(OUTPUT_DIR + 'FRILL.pickle', "rb"))
+    X_trill_features = f['X_trill_features']
 
 print("Training COVID-19")
 y = df['label_covid']
@@ -76,11 +75,14 @@ for fold in range(5):
 
     pred = model.predict_proba(X_val)
 
-    pred = np.array(pred)[:,1]
+    pred = np.array(pred)[:, 1]
     preds.append(pred)
     auc = roc_auc_score(y_val, pred)
     aucs.append(auc)
     print(auc)
+    model_filename = OUTPUT_DIR + f'covid_model_fold{fold}.pkl'
+    with open(model_filename, 'wb') as file:
+        pickle.dump(model, file)
     del model
 
 targets = np.concatenate(targets)
@@ -124,7 +126,7 @@ for fold in range(5):
 
     pred = model.predict_proba(X_val)
 
-    pred = np.array(pred)[:,1]
+    pred = np.array(pred)[:, 1]
     preds.append(pred)
     auc = roc_auc_score(y_val, pred)
     aucs.append(auc)
@@ -174,7 +176,7 @@ for fold in range(5):
 
     pred = model.predict_proba(X_val)
 
-    pred = np.array(pred)[:,1]
+    pred = np.array(pred)[:, 1]
     preds.append(pred)
     auc = roc_auc_score(y_val, pred)
     aucs.append(auc)
@@ -186,13 +188,3 @@ preds = np.concatenate(preds)
 
 print("(!) cv5 AUC ", np.mean(aucs), np.std(aucs))
 evaluate(preds, targets)
-
-#NOT WORKING TODO: FIX THIS BRUH
-def predict_covid(audio_path):
-    covid_model = pickle.load(open(OUTPUT_DIR + 'FRILL.pickle', 'rb'))
-
-    features = make_nonsemantic_frill_nofrontend_feat(audio_path)
-
-    prediction = covid_model.predict(features.reshape(1, -1))
-
-    print(f"Prediction for COVID-19: {prediction[0]}")

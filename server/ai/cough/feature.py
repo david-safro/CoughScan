@@ -2,16 +2,17 @@ import os
 import numpy as np
 
 import tensorflow.compat.v2 as tf
+
 tf.enable_v2_behavior()
 import tensorflow_hub as hub
 
 import librosa
 
-
 frill_nofrontend_model = hub.load('https://tfhub.dev/google/nonsemantic-speech-benchmark/frill-nofrontend/1')
 
+
 def stabilized_log(data, additive_offset, floor):
-  return tf.math.log(tf.math.maximum(data, floor) + additive_offset)
+    return tf.math.log(tf.math.maximum(data, floor) + additive_offset)
 
 
 def log_mel_spectrogram(data,
@@ -50,6 +51,7 @@ def log_mel_spectrogram(data,
     log_mel = stabilized_log(mel, log_additive_offset, log_floor)
     return log_mel
 
+
 def compute_frontend_features(samples, sr, frame_hop, n_required=16000, num_mel_bins=64, frame_width=96):
     if samples.dtype == np.int16:
         samples = tf.cast(samples, np.float32) / np.iinfo(np.int16).max
@@ -66,9 +68,11 @@ def compute_frontend_features(samples, sr, frame_hop, n_required=16000, num_mel_
     mel = tf.signal.frame(mel, frame_length=frame_width, frame_step=frame_hop, axis=0)
     return mel
 
+
 def make_nonsemantic_frill_nofrontend_feat(filename):
     waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
-    frontend_feats = tf.expand_dims(compute_frontend_features(waveform, 16000, frame_hop=17), axis=-1).numpy().astype(np.float32)
+    frontend_feats = tf.expand_dims(compute_frontend_features(waveform, 16000, frame_hop=17), axis=-1).numpy().astype(
+        np.float32)
     assert frontend_feats.shape[1:] == (96, 64, 1)
 
     embeddings = frill_nofrontend_model(frontend_feats)['embedding']
@@ -76,10 +80,11 @@ def make_nonsemantic_frill_nofrontend_feat(filename):
     std_emb = embeddings.numpy().std(axis=0)
     return np.concatenate((mean_emb, std_emb))
 
+
 def get_features_of_list_audio(path, X):
     X_trill_features = []
     for index, row in X.iterrows():
         cough_path = os.path.join(path, row['file_path'])
         X_trill_features.append(make_nonsemantic_frill_nofrontend_feat(cough_path))
-        
+
     return np.array(X_trill_features)
