@@ -10,9 +10,23 @@
         event.preventDefault();
 
         const formData = new FormData(event.target as HTMLFormElement);
-        const formDataObject:any = {};
+        const formDataObject: any = {};
         formData.forEach((value, key) => {
             formDataObject[key] = value;
+        });
+
+        let request: any;
+        Object.keys(formDataObject).forEach(i => {
+            const val = formDataObject[i];
+            if (val == "true") {
+                request[i] = 1;
+            }
+            else if (val == "false") {
+                request[i] = 0;
+            }
+            else {
+                request[i] = val;
+            }
         });
 
         try {
@@ -22,21 +36,17 @@
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
                 },
-                body: JSON.stringify(formDataObject)
+                body: JSON.stringify(request)
             });
 
             if (response.ok) {
                 const responseData = await response.json();
                 console.log('Response from server:', responseData);
-                let symptomInputOptions: any = {};
-                formData.forEach((value, key) => {
-                    symptomInputOptions[key] = value;
-                });
                 const pageData: PageData = {
                     diagnosisInfo: responseData,
-                    symptomInputOptions
+                    symptomInputOptions: formDataObject
                 };
-                window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(responseData))}`
+                window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(pageData))}`
 
             } else {
                 console.error('Server returned an error:', response.status);
