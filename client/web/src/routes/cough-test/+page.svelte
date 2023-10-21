@@ -79,10 +79,7 @@
         const formData = new FormData(document.getElementById("cough-questions") as HTMLFormElement);
         let coughTestOptions: any = {};
         formData.forEach((value, key) => {
-            let newValue;
-            if (value == "no") newValue = "false"
-            else if (value == "yes") newValue = "true"
-            coughTestOptions[key] = newValue
+            coughTestOptions[key] = value
         });
 
         let pageData = {
