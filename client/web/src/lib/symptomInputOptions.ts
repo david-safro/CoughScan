@@ -10,6 +10,6 @@ export const symptomInputOptionLabels = [
     ["Are you experiencing diarrhea?", "diarrhea"],
     ["Are you not experiencing any symptoms?", "noSymptoms"],
     ["Which age group do you belong to? [0-9, 10-19, 20-24, 25-59, 60+]", "ageRange"],
-    ["What is your gender? [Male, Female, Transgender]", "gender"],
+    ["What is your gender? [Male, Female, Other]", "gender"],
     ["Do you have any known contact history with a COVID-19 patient? [Don't know, No, Yes]", "history"]
 ];

@@ -9,6 +9,10 @@
     let recording: boolean = false;
     let audioBlob: Blob | null = null;
 
+    export function handleCheck(e: Event) {
+        (document.getElementsByClassName((e.target as HTMLInputElement).dataset["name"]!)[0] as HTMLInputElement).value = (e.target as HTMLInputElement).checked.toString()
+    }
+
     export async function handleRecordButtonClick() {
         if (recording) {
             stopRecording();
@@ -129,8 +133,8 @@
                         {/each}
                     </select>
                     {:else}
-                    <input type="checkbox" name={propertyName} value="true"/>
-                    <input type="hidden" name={propertyName} value="false"/>
+                    <input type="checkbox" data-name={propertyName} on:change={handleCheck}/>
+                    <input type="hidden" name={propertyName} class={propertyName} value="false"/>
                     {/if}
                     <span class="style"/>
                 </div>

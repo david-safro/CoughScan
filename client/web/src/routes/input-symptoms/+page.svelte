@@ -2,6 +2,10 @@
     import { symptomInputOptionLabels } from "../../lib/symptomInputOptions";
     import type { PageData } from "./$types";
 
+    export function handleCheck(e: Event) {
+        (document.getElementsByClassName((e.target as HTMLInputElement).dataset["name"]!)[0] as HTMLInputElement).value = (e.target as HTMLInputElement).checked.toString()
+    }
+
     async function handleSubmit(event: SubmitEvent) {
         event.preventDefault();
 
@@ -60,8 +64,8 @@
                 {/each}
             </select>
             {:else}
-            <input type="checkbox" name={propertyName} value="true"/>
-            <input type="hidden" name={propertyName} value="false"/>
+            <input type="checkbox" data-name={propertyName} on:change={handleCheck}/>
+            <input type="hidden" name={propertyName} class={propertyName} value="false"/>
             {/if}
             <span class="style"/>
         </div>

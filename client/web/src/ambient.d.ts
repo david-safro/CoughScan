@@ -4,11 +4,9 @@ declare interface DiagnosisInfo {
     type: "cough" | "symptoms"
 }
 declare interface CoughTestOptions {
-    age: number,
+    ageRange: string,
     sex: "male" | "female" | "other",
-    respiratoryCondition: string,
-    feverMusclePain: boolean,
-    healthStatus: string
+    fever: boolean,
 }
 declare interface SymptomInputOptions {
     fever: boolean,
