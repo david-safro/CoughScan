@@ -53,6 +53,9 @@ form > div > div > select {
     height: 100%;
     position: absolute;
     right: 0;
+    background-color: white;
+    border: solid 0.15rem rgb(147, 147, 147);
+    border-radius: 0.2rem;
 }
 
 form > button[type=submit] {

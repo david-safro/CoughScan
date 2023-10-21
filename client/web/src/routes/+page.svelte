@@ -33,6 +33,9 @@
     <p>
         Additionally, you can input your symptoms directly<br>which can diagnose Covid with a 97.7% accuracy
     </p>
+    <p>
+        If you need help taking the tests, view the <a href="/guide">guide.</a>
+    </p>
     <div>
         <button on:click={navigateToCoughTest}>
             Cough Test

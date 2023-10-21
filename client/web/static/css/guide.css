@@ -1,0 +1,24 @@
+main {
+    margin-top: 10rem;
+    width: 90%;
+    margin-inline: auto;
+}
+main > h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+main > div {
+    margin-top: 3rem;
+    padding: 1.25rem;
+    background-color: var(--secondary-light);
+    border-radius: 0.8rem;
+}
+main > div > h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+main > div > p {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    color: #5d5d5d;
+}

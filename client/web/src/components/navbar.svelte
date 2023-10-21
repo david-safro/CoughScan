@@ -1,8 +1,8 @@
 <script lang="ts">
     const navItems = [
+        { title: "Guide", href: "/guide" },
         { title: "Cough Test", href: "/cough-test" },
-        { title: "Input Symptoms", href: "/input-symptoms" },
-        { title: "About", href: "/about" }
+        { title: "Input Symptoms", href: "/input-symptoms" }
     ];
 </script>
 
