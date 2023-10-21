@@ -5,7 +5,7 @@
     async function handleSubmit(event: SubmitEvent) {
         event.preventDefault();
 
-        const formData = (event.target as HTMLFormElement).formData;
+        const formData = new FormData(event.target as HTMLFormElement);
 
         /*
         try {
@@ -25,23 +25,19 @@
         }
         */
 
+        let symptomInputOptions: any = {};
+        formData.forEach((value, key) => {
+            symptomInputOptions[key] = value;
+        });
+
         //temp
         const responseData: PageData = {
             diagnosisInfo: {
                 certainty: 84.7,
                 diagnosis: true,
-                type: "cough"
+                type: "symptoms"
             },
-            coughTestOptions: {
-                age: 14,
-                gender: "male",
-                respiratoryCondition: "yes",
-                feverMusclePain: false,
-                healthStatus: "healthy"
-            },
-            symptomTestOptions: {
-
-            }
+            symptomInputOptions
         };
         window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(responseData))}`
     }
@@ -64,7 +60,7 @@
                 {/each}
             </select>
             {:else}
-            <input type="checkbox" name={propertyName} value="true" on:change={e => e.target.value = e.target.checked}/>
+            <input type="checkbox" name={propertyName} value="true"/>
             <input type="hidden" name={propertyName} value="false"/>
             {/if}
             <span class="style"/>

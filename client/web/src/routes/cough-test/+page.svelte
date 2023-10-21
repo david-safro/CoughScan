@@ -1,6 +1,8 @@
 <script lang="ts">
     import axios from 'axios';
 
+    import { coughTestOptionLabels } from '$lib/coughTestOptions';
+
     let mediaRecorder: MediaRecorder | null = null;
     let chunks: BlobPart[] = [];
     let audioURL: string = "";
@@ -70,7 +72,20 @@
     }
 
     export function postCough() {
-        console.log("sent")
+        const formData = new FormData(document.getElementById("cough-questions") as HTMLFormElement);
+        let coughTestOptions: any = {};
+        formData.forEach((value, key) => {
+            let newValue;
+            if (value == "no") newValue = "false"
+            else if (value == "yes") newValue = "true"
+            coughTestOptions[key] = newValue
+        });
+
+        let pageData = {
+            diagnosisInfo: {},
+            coughTestOptions
+        }
+
         axios
         .post("http://127.0.0.1:5000/upload", audioBlob, {
             headers: {
@@ -78,11 +93,16 @@
             }
         })
         .then((response) => {
-                console.log(response.data);
+            // replace with api response
+
         })
         .catch((error) => {
             console.error('Error:', error);
         });
+
+        //temp
+        pageData.diagnosisInfo = {diagnosis: true, certainty: 80.1, type: "cough"}
+        window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(pageData))}`
     }
 </script>
 
@@ -94,9 +114,29 @@
         <p>
             Listen back to the audio to make sure you captured the cough clearly. Press cancel to re-record it.
         </p>
-        <li>
-            
-        </li>
+        <form id="cough-questions">
+            {#each coughTestOptionLabels as [coughTestOptionLabel, propertyName]}
+            <div>
+                <label for={propertyName}>{coughTestOptionLabel}</label>
+                <div>
+                    {#if coughTestOptionLabel.includes("[")}
+                    <select name={propertyName}>
+                        {#each coughTestOptionLabel.substring(
+                        coughTestOptionLabel.indexOf("[") + 1,
+                        coughTestOptionLabel.indexOf("]")
+                        ).split(", ") as option}
+                            <option value={option.replace(" ", "-").toLowerCase()}>{option}</option>
+                        {/each}
+                    </select>
+                    {:else}
+                    <input type="checkbox" name={propertyName} value="true"/>
+                    <input type="hidden" name={propertyName} value="false"/>
+                    {/if}
+                    <span class="style"/>
+                </div>
+            </div>
+            {/each}
+        </form>
         <div>
             <button on:click={hideModal}>Cancel</button>
             <button on:click={() => {hideModal(); postCough()}}>Submit</button>

@@ -70,7 +70,7 @@
 
 #certainty-display {
     width: 50rem;
-    aspect-ratio: 1/1;
+    height: 50rem;
     border-radius: 50%;
     position: relative;
     background-image: conic-gradient(var(--secondary) 0, #fff 0deg);

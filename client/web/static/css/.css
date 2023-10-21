@@ -13,6 +13,10 @@
     --secondary-transparent: #9f84ff83;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .h-font {
     font-family: 'Ubuntu', sans-serif;
 }
