@@ -1,5 +1,4 @@
 import tempfile
-import pandas as pd
 import torch
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -32,17 +31,18 @@ def upload():
 def predict():
     try:
         data = request.json
+        print(data)
         input_data = [
                     data['fever'],
                     data['tiredness'],
                     data['dryCough'],
-                    data['difficultyInBreathing'],
+                    data['breathingDifficulty'],
                     data['soreThroat'],
                     data['pains'],
                     data['nasalCongestion'],
                     data['runnyNose'],
                     data['diarrhea'],
-                    data['noneSymptom'],
+                    data['noSymptoms'],
                     data['noneExperiencing'],
                     1 if data['ageGroup'] == "0-9" else 0,
                     1 if data['ageGroup'] == "10-19" else 0,
@@ -62,6 +62,7 @@ def predict():
 
     except Exception as e:
         response = jsonify({"error": str(e)})
+        print(str(e))
         return response, 500
-if __name__ == '__main__':
+if __name__ == ('__main__'):
     app.run(host='127.0.0.1', port=5000)

@@ -10,40 +10,45 @@
         event.preventDefault();
 
         const formData = new FormData(event.target as HTMLFormElement);
+        const formDataObject:any = {};
+        formData.forEach((value, key) => {
+            formDataObject[key] = value;
+        });
 
-        /*
         try {
-            const response = await fetch('/your-server-endpoint', {
+            const response = await fetch('http://127.0.0.1:5000/predict_symptoms', {
                 method: 'POST',
-                body: formData
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                },
+                body: JSON.stringify(formDataObject)
             });
 
             if (response.ok) {
                 const responseData = await response.json();
                 console.log('Response from server:', responseData);
+                let symptomInputOptions: any = {};
+                formData.forEach((value, key) => {
+                    symptomInputOptions[key] = value;
+                });
+                const pageData: PageData = {
+                    diagnosisInfo: responseData,
+                    symptomInputOptions
+                };
+                window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(responseData))}`
+
             } else {
                 console.error('Server returned an error:', response.status);
             }
         } catch (error) {
             console.error('Error while sending the data', error);
         }
-        */
 
-        let symptomInputOptions: any = {};
-        formData.forEach((value, key) => {
-            symptomInputOptions[key] = value;
-        });
+
 
         //temp
-        const responseData: PageData = {
-            diagnosisInfo: {
-                certainty: 84.7,
-                diagnosis: true,
-                type: "symptoms"
-            },
-            symptomInputOptions
-        };
-        window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(responseData))}`
+
     }
 </script>
 
