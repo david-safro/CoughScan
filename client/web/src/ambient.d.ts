@@ -18,7 +18,7 @@ declare interface SymptomInputOptions {
     nasalCongestion: boolean,
     runnyNose: boolean,
     diarrhea: boolean,
-    noneSymptom: boolean,
+    noSymptoms: boolean,
     noneExperiencing: boolean,
     ageGroup: "0-9" | "10-19" | "20-24" | "25-59" | "60+",
     gender: "male" | "female" | "transgender",
