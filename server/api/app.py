@@ -1,8 +1,10 @@
+import tempfile
 import pandas as pd
 import torch
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from ..ai.symptoms.main import predict
+from server.ai.symptoms.predict import predict
+from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
 CORS(app)
 
@@ -11,16 +13,20 @@ def upload():
     try:
         print("Received audio data")
         audio_data = request.data
-        with open('received_audio.webm', 'wb') as audio_file:
-            audio_file.write(audio_data)
 
-        response = jsonify({"message": "Audio data received and saved successfully."})
-        return response, 200
+        with tempfile.NamedTemporaryFile(delete=True) as temp_audio_file:
+            temp_audio_file.write(audio_data)
+            temp_audio_file.flush()
+            predicted_class, confidence = cough_predict(temp_audio_file.name, "../ai/cough/sounddr_data/output/covid_model_fold0.pkl")
+            response = jsonify({
+                "prediction": predicted_class,
+                "confidence": f"{confidence * 100:.2f}%"
+            })
+            return response, 200
+
     except Exception as e:
         response = jsonify({"error": str(e)})
         return response, 500
-
-
 #ROUTE TO RECEIVE SYMPTOM DATA AND RETURN PREDICTION (0-3)
 @app.route('/predict_symptoms', methods=['POST'])
 def predict():
@@ -51,7 +57,7 @@ def predict():
                     1 if data['contactHistory'] == "yes" else 0
                 ]
         input_tensor = torch.FloatTensor([input_data])
-        response = predict(input_tensor)
+        response = predict(input_tensor, "../ai/symptoms/modelv1ADAM.pkl")
         return response, 200
 
     except Exception as e:

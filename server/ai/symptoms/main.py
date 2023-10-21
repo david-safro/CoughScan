@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import BorderlineSMOTE
 import pickle
-from model import Net
+from server.ai.symptoms.symptom_model import SymNet
 df = pd.read_csv('data/Cleaned-Data.csv')
 df = df.drop(columns=['Country'])
 
@@ -51,13 +51,13 @@ print(f"Confusion Matrix: \n{conf_matrix}")
 
 
 def predict(input_data):
-    model = pickle.load('modelv1ADAM.pkl')
+    with open('modelv1ADAM.pkl', 'rb') as file:
+        model = pickle.load(file)
     input_tensor = torch.FloatTensor([input_data])
     model.eval()
     with torch.no_grad():
         output = model(input_tensor)
         _, predicted_class = torch.max(output, 1)
-
     return predicted_class.item()
 
 # sample data cuz too lazy to read from data
