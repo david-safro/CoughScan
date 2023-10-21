@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-class Net(nn.Module):
+class SymNet(nn.Module):
     def __init__(self, X_train):
-        super(Net, self).__init__()
+        super(SymNet, self).__init__()
         self.fc1 = nn.Linear(X_train.shape[1], 256)
         self.bn1 = nn.BatchNorm1d(256)
         self.dropout1 = nn.Dropout(0.5)

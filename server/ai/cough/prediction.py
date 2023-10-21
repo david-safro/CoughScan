@@ -1,7 +1,7 @@
 import pickle
-from feature import make_nonsemantic_frill_nofrontend_feat
+from server.ai.cough.feature import make_nonsemantic_frill_nofrontend_feat
 
-def predict(audio_file, model_filename='covid_model_fold0.pkl'):
+def cough_predict(audio_file, model_filename='covid_model_fold0.pkl'):
     with open(model_filename, 'rb') as file:
         model = pickle.load(file)
     features = make_nonsemantic_frill_nofrontend_feat(audio_file)
@@ -13,7 +13,7 @@ def predict(audio_file, model_filename='covid_model_fold0.pkl'):
     return prediction[0], probability
 
 
-audio_file = 'audiocough.wav'
-model_filename = './sounddr_data/output/covid_model_fold0.pkl'
-prediction = predict(audio_file, model_filename)
-print(f'Prediction: {prediction}')
+#audio_file = 'audiocough.wav'
+#model_filename = './sounddr_data/output/covid_model_fold0.pkl'
+#prediction = cough_predict(audio_file, model_filename)
+#print(f'Prediction: {prediction}')

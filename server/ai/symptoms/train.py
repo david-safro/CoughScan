@@ -1,3 +1,5 @@
+import pickle
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -6,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import BorderlineSMOTE
-from model import Net
+from symptom_model import SymNet
 df = pd.read_csv('data/Cleaned-Data.csv')
 df = df.drop(columns=['Country'])
 
@@ -35,7 +37,7 @@ y_test_tensor = torch.LongTensor(y_test)
 
 
 
-model = Net(X_train)
+model = SymNet(X_train)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=10, factor=0.5)
@@ -84,7 +86,7 @@ print(f"Accuracy: {accuracy}")
 print(f"Classification Report: \n{report}")
 print(f"Confusion Matrix: \n{conf_matrix}")
 #for saving wnb stuff
-#with open('modelv1ADAM.pkl', 'wb') as file:
-#    pickle.dump(model, file)
+with open('modelv1ADAM.pkl', 'wb') as file:
+    pickle.dump(model, file)
 
 print("Model saved to trained_model.pkl")
