@@ -9,8 +9,8 @@ def cough_predict(audio_file, model_filename='covid_model_fold0.pkl'):
     prediction = model.predict(features)
 
     probability = model.predict_proba(features)[0][prediction[0]]
-
-    return prediction[0], probability
+    print(prediction[0])
+    return int(prediction[0]), probability
 
 
 #audio_file = 'audiocough.wav'

@@ -1,3 +1,4 @@
+import os
 import tempfile
 import traceback
 
@@ -15,18 +16,32 @@ def upload():
         print("Received audio data")
         audio_data = request.data
 
-        with tempfile.NamedTemporaryFile(delete=True) as temp_audio_file:
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as temp_audio_file:
             temp_audio_file.write(audio_data)
             temp_audio_file.flush()
+            temp_audio_file.seek(0)  # Rewind the file pointer
+
+            print("tempfile created")
             predicted_class, confidence = cough_predict(temp_audio_file.name, "../ai/cough/sounddr_data/output/covid_model_fold0.pkl")
+            print("response received")
+
+            # Explicitly close the temporary audio file
+            temp_audio_file.close()
+
+            # Clean up the temporary audio file
+            os.remove(temp_audio_file.name)
+
             response = jsonify({
                 "prediction": predicted_class,
                 "confidence": f"{confidence * 100:.2f}%"
             })
+            print("sent")
             return response, 200
 
     except Exception as e:
         response = jsonify({"error": str(e)})
+        print(traceback.format_exc())
+        print(str(e))
         return response, 500
 #ROUTE TO RECEIVE SYMPTOM DATA AND RETURN PREDICTION (0-3)
 @app.route('/predict_symptoms', methods=['POST'])
@@ -60,7 +75,10 @@ def predict():
                 ]
         print(input_data)
         symptom_prediction = predict_symptoms(input_data, "../ai/symptoms/modelv1ADAM.pkl")
-        response = jsonify({"diagnosis": symptom_prediction[0],"certainty":symptom_prediction[1]})
+        response = jsonify({
+            "diagnosis": symptom_prediction[0],
+            "certainty":symptom_prediction[1]
+        })
         print("success")
         return response, 200
 

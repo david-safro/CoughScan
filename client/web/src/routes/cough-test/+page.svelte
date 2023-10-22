@@ -39,7 +39,7 @@
                 };
 
                 mediaRecorder.onstop = () => {
-                    audioBlob = new Blob(chunks, { type: 'audio/webm' });
+                    audioBlob = new Blob(chunks, { type: 'audio/wav' });
                     audioURL = URL.createObjectURL(audioBlob);
                     showModal();
                 };
@@ -90,7 +90,7 @@
         axios
         .post("http://127.0.0.1:5000/upload", audioBlob, {
             headers: {
-                'Content-Type': 'audio/webm'
+                'Content-Type': 'audio/wav'
             }
         })
         .then((response) => {
