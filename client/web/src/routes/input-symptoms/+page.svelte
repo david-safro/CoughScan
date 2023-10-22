@@ -43,7 +43,7 @@
                 const responseData = await response.json();
                 console.log('Response from server:', responseData);
                 const pageData: PageData = {
-                    diagnosisInfo: responseData,
+                    diagnosisInfo: {...responseData, type: "symptoms"},
                     symptomInputOptions: formDataObject
                 };
                 window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(pageData))}`
@@ -54,11 +54,6 @@
         } catch (error) {
             console.error('Error while sending the data', error);
         }
-
-
-
-        //temp
-
     }
 </script>
 

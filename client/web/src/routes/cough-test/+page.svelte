@@ -94,16 +94,12 @@
             }
         })
         .then((response) => {
-            // replace with api response
-
+            pageData.diagnosisInfo = {...response, type: "cough"};
+            window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(pageData))}`
         })
         .catch((error) => {
             console.error('Error:', error);
         });
-
-        //temp
-        pageData.diagnosisInfo = {diagnosis: true, certainty: 80.1, type: "cough"}
-        window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(pageData))}`
     }
 </script>
 
