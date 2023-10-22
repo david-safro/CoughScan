@@ -33,6 +33,7 @@ body {
 a {
     color: var(--secondary);
     cursor: pointer;
+    text-decoration: underline;
 }
 
 #fade-container {
