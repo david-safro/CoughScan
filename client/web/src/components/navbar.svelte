@@ -8,13 +8,13 @@
 
 <link rel="stylesheet" href="/css/navbar.css"/>
 <nav id="navbar">
-    <a href="/">
+    <a on:click={() => {window.location.href = "/"}}>
         <h1><img src="/img/logo.svg"/>Cough<span>Scan</span></h1>
     </a>
     <ul>
         {#each navItems as { title, href }}
             <li>
-                <a href={href}>
+                <a on:click={() => {window.location.href = href}}>
                     {title}
                 </a>
             </li>

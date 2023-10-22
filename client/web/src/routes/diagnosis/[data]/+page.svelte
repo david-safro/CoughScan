@@ -7,6 +7,8 @@
     export let data: PageData
     let diagnosisInfo: DiagnosisInfo = data.diagnosisInfo;
 
+    let scrollDown: HTMLDivElement;
+
     let options: CoughTestOptions | SymptomInputOptions = diagnosisInfo.type == "cough" ? data.coughTestOptions : data.symptomInputOptions;
     let info: Array<Array<any>> = []
     let labels = diagnosisInfo.type == "cough" ? coughTestOptionLabels : symptomInputOptionLabels;
@@ -24,10 +26,12 @@
 
     populateUserOptions();
 
-    onMount(() =>  {
+    onMount(() => {
         setTimeout(() => {
             setCertaintyDisplay(diagnosisInfo.certainty);
         }, 200)
+        scrollDown = document.getElementById("scroll-down") as HTMLDivElement
+        document.onscroll = scrollHandler;
     })
 
     function setCertaintyDisplay(percent: number) {
@@ -40,6 +44,10 @@
 
             if (i >= percent) clearInterval(interval);
         }, 1);
+    }
+
+    function scrollHandler() {
+        scrollDown.style.opacity = (1 - window.scrollY / 200).toString()
     }
 
     export function saveDiagnosis() {
@@ -61,7 +69,7 @@
         <div id="certainty-display">
             <div id="certainty-text">
                 <h2><span>{diagnosisInfo.certainty}%</span> Certainty</h2>
-                <p>You can retake the test more times for increased accuracy.</p>
+                <p>If the certainty is less than 80%, ensure you are submitting clear and correct information. If you need help, see the <a on:click={() => {window.location.href = "/guide"}}>guide.</a></p>
             </div>
         </div>
         <div id="right">
@@ -74,10 +82,16 @@
             </ul>
             <div id="info">
                 <p>
-                    Ensure the information entered above is accurate. If it isn't, <a href="/cough-test">take the test again.</a>
+                    Ensure the information entered above is accurate. If it isn't, <a on:click={() => {window.location.href = "/cough-test"}}>take the test again.</a>
                 </p>
             </div>
         </div>
+    </div>
+</div>
+<div id="scroll-down">
+    <span>Scroll down to read advice</span>
+    <div>
+
     </div>
 </div>
 <div id="what-now">
@@ -86,13 +100,13 @@
     <p class="para">
         {#if diagnosisInfo.type == "symptoms"}
             {#if diagnosisInfo.diagnosis}
-            It is likely that you are sick with some virus (not necessarily COVID-19). This means you can take the <a href="/cough-test">cough test</a> to predict if you have COVID.
+            It is likely that you are sick with some virus (not necessarily COVID-19). This means you can take the <a on:click={() => {window.location.href = "/cough-test"}}>cough test</a> to predict if you have COVID.
             {:else}
-            You likely are not sick. This means you can take the <a href="/cough-test">cough test</a> to determine if you have COVID.
+            You likely are not sick. This means you can take the <a on:click={() => {window.location.href = "/cough-test"}}>cough test</a> to determine if you have COVID.
             {/if}
         {:else}
             {#if diagnosisInfo.diagnosis}
-            It is likely that you have COVID-19. However, if you don't think you are sick with any virus, then the test could be less accurate. Take the symptoms test at <a href="/input-symptoms">/input-symptoms</a> to tell if you are sick. If you are still unsure about the result, take a physical Covid test. If you are sure you have Covid, make sure to quarantine yourself as much as possible to stop the spread.
+            It is likely that you have COVID-19. However, if you don't think you are sick with any virus, then the test could be less accurate. Take the symptoms test at <a on:click={() => {window.location.href = "/input-symptoms"}}>/input-symptoms</a> to tell if you are sick. If you are still unsure about the result, take a physical Covid test. If you are sure you have Covid, make sure to quarantine yourself as much as possible to stop the spread.
             {:else}
             You likely do not have COVID-19. However, if you feel this diagnosis is innacurate you may want to retake this test to make sure, and if you are still unsure you should take a physical test.
             {/if}

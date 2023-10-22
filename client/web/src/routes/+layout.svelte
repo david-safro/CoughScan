@@ -1,13 +1,19 @@
 <script lang="ts">
-    import { onMount } from "svelte";
+    import { onDestroy, onMount, setContext, tick } from "svelte";
     import Device from "svelte-device-info";
     import Footer from "../components/footer.svelte";
     import Navbar from "../components/navbar.svelte";
 
+    let fadeContainer: HTMLDivElement
+
+    function triggerAnimation() {
+        fadeContainer = document.getElementById("fade-container") as HTMLDivElement;
+        fadeContainer.style.opacity = "1";
+    }
+
     onMount(() => {
-        const fadeContainer = document.getElementById("fade-container") as HTMLDivElement;
+        triggerAnimation()
         const resizeHandler = () => {
-            fadeContainer.style.opacity = "1";
             document.documentElement.style.fontSize = `${window.innerWidth / (325 / 2)}px`;
         };
         resizeHandler();
@@ -17,6 +23,7 @@
             alert("This website was not designed for mobile. Download the app for a better experience");
         }
         return () => {
+            fadeContainer.style.opacity = "0";
             window.removeEventListener('resize', resizeHandler);
         };
     });
