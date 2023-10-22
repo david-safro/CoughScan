@@ -15,7 +15,7 @@
             formDataObject[key] = value;
         });
 
-        let request: any;
+        let request: any = {};
         Object.keys(formDataObject).forEach(i => {
             const val = formDataObject[i];
             if (val == "true") {
