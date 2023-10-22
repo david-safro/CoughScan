@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import BorderlineSMOTE
-from symptom_model import SymNet
+from server.ai.symptoms.symptom_model import SymNet
 df = pd.read_csv('data/Cleaned-Data.csv')
 df = df.drop(columns=['Country'])
 

@@ -1,8 +1,10 @@
 import tempfile
+import traceback
+
 import torch
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from server.ai.symptoms.predict import predict
+from server.ai.symptoms.predict import predict_symptoms
 from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
 CORS(app)
@@ -44,24 +46,27 @@ def predict():
                     data['diarrhea'],
                     data['noSymptoms'],
                     data['noneExperiencing'],
-                    1 if data['ageGroup'] == "0-9" else 0,
-                    1 if data['ageGroup'] == "10-19" else 0,
-                    1 if data['ageGroup'] == "20-24" else 0,
-                    1 if data['ageGroup'] == "25-59" else 0,
-                    1 if data['ageGroup'] == "60+" else 0,
+                    1 if data['ageRange'] == "0-9" else 0,
+                    1 if data['ageRange'] == "10-19" else 0,
+                    1 if data['ageRange'] == "20-24" else 0,
+                    1 if data['ageRange'] == "25-59" else 0,
+                    1 if data['ageRange'] == "60+" else 0,
                     1 if data['gender'] == "male" else 0,
                     1 if data['gender'] == "female" else 0,
-                    1 if data['gender'] == "transgender" else 0,
-                    1 if data['contactHistory'] == "dont-know" else 0,
-                    1 if data['contactHistory'] == "no" else 0,
-                    1 if data['contactHistory'] == "yes" else 0
+                    1 if data['gender'] == "other" else 0,
+                    1 if data['history'] == "dont-know" else 0,
+                    1 if data['history'] == "no" else 0,
+                    1 if data['history'] == "yes" else 0
                 ]
-        input_tensor = torch.FloatTensor([input_data])
-        response = predict(input_tensor, "../ai/symptoms/modelv1ADAM.pkl")
+        print(input_data)
+        symptom_prediction = predict_symptoms(input_data, "../ai/symptoms/modelv1ADAM.pkl")
+        response = jsonify({"diagnosis": symptom_prediction[0],"certainty":symptom_prediction[1]})
+        print("success")
         return response, 200
 
     except Exception as e:
         response = jsonify({"error": str(e)})
+        print(traceback.format_exc())
         print(str(e))
         return response, 500
 if __name__ == ('__main__'):
