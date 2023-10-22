@@ -75,7 +75,7 @@
                     symptomInputOptionLabel.indexOf("[") + 1,
                     symptomInputOptionLabel.indexOf("]")
                 ).split(", ") as option}
-                    <option value={option.replace(" ", "-").toLowerCase()}>{option}</option>
+                    <option value={option.replaceAll(" ", "-").replaceAll(`'`, "").toLowerCase()}>{option}</option>
                 {/each}
             </select>
             {:else}
