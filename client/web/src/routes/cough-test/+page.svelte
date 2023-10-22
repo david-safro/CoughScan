@@ -75,7 +75,7 @@
         }
     }
 
-    export function postCough() {
+    export async function postCough() {
         const formData = new FormData(document.getElementById("cough-questions") as HTMLFormElement);
         let coughTestOptions: any = {};
         formData.forEach((value, key) => {
@@ -87,19 +87,19 @@
             coughTestOptions
         }
 
-        axios
-        .post("http://127.0.0.1:5000/upload", audioBlob, {
+        const response = await fetch("http://127.0.0.1:5000/upload", {
             headers: {
-                'Content-Type': 'audio/wav'
-            }
+                'Content-Type': 'audio/wav',
+            },
+            body: audioBlob,
+            method: "POST"
         })
-        .then((response) => {
-            pageData.diagnosisInfo = {...response, type: "cough"};
+        if (response.ok) {
+            const responseData = await response.json();
+
+            pageData.diagnosisInfo = {...responseData, type: "cough"};
             window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(pageData))}`
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
+        }
     }
 </script>
 
