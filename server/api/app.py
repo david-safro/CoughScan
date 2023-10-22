@@ -30,12 +30,13 @@ def upload():
 
             # Clean up the temporary audio file
             os.remove(temp_audio_file.name)
-
+            print(predicted_class, confidence)
             response = jsonify({
-                "prediction": predicted_class,
-                "confidence": f"{confidence * 100:.2f}%"
+                "diagnosis": bool(predicted_class),
+                "certainty": f"{confidence * 100:.2f}%"
             })
             print("sent")
+            print("response sent: ",response)
             return response, 200
 
     except Exception as e:
