@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="/css/guide.css"/>
 <main>
+    <div id="effect">
+        
+    </div>
     <h1 class="h-font">CoughScan Guide</h1>
     <div>
         <h2>How can I use CoughScan to predict if I have COVID-19?</h2>
