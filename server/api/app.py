@@ -1,14 +1,16 @@
 import os
 import tempfile
 import traceback
-
-import torch
+import sys
+sys.path.append("..")
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from ..ai.symptoms.predict import predict_symptoms
 from ..ai.cough.prediction import cough_predict
 app = Flask(__name__)
 CORS(app)
+project_path = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, project_path)
 
 @app.route('/upload', methods=['POST'])
 def upload():
