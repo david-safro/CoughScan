@@ -1,16 +1,14 @@
 import os
 import tempfile
 import traceback
-import sys
-sys.path.append("..")
+
+import torch
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from ..ai.symptoms.predict import predict_symptoms
-from ..ai.cough.prediction import cough_predict
+from server.ai.symptoms.predict import predict_symptoms
+from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
 CORS(app)
-project_path = os.path.abspath(os.path.dirname(__file__))
-sys.path.insert(0, project_path)
 
 @app.route('/upload', methods=['POST'])
 def upload():
@@ -91,4 +89,4 @@ def predict():
         print(str(e))
         return response, 500
 if __name__ == ('__main__'):
-    app.run(host='127.0.0.1', port=5000)
+    app.run(host='143.42.118.185', port=5000, ssl_context='adhoc')
