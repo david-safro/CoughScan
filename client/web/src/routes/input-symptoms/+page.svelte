@@ -30,7 +30,7 @@
         });
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/predict_symptoms', {
+            const response = await fetch('http://143.42.118.185:5000/predict_symptoms', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
