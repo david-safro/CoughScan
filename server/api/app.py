@@ -8,8 +8,8 @@ from flask_cors import CORS
 from server.ai.symptoms.predict import predict_symptoms
 from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
-CORS(app)
-
+CORS(app, resources={r"/*": {"origins": ["https://coughscan.net", "http://coughscan.net"]}})
+print("STARTED")
 @app.route('/upload', methods=['POST'])
 def upload():
     try:
@@ -89,4 +89,5 @@ def predict():
         print(str(e))
         return response, 500
 if __name__ == ('__main__'):
-    app.run(host='143.42.118.185', port=5000, ssl_context='adhoc')
+    app.run(host='0.0.0.0', port=5000)
+

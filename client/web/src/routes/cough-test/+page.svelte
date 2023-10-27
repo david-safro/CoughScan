@@ -87,7 +87,7 @@
             coughTestOptions
         }
 
-        const response = await fetch("https://143.42.118.185:5000/upload", {
+        const response = await fetch("https://coughscan.net/api/upload", {
             headers: {
                 'Content-Type': 'audio/wav',
             },
