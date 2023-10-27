@@ -30,7 +30,7 @@
         });
 
         try {
-            const response = await fetch('http://0.0.0.0:5000/predict_symptoms', {
+            const response = await fetch('https://coughscan.net/api/predict_symptoms', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

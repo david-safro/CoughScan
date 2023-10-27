@@ -10,7 +10,7 @@ from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": ["https://coughscan.net", "http://coughscan.net"]}})
 print("STARTED")
-@app.route('/upload', methods=['POST'])
+@app.route('/api/upload', methods=['POST'])
 def upload():
     try:
         print("Received audio data")
@@ -22,7 +22,7 @@ def upload():
             temp_audio_file.seek(0)  # Rewind the file pointer
 
             print("tempfile created")
-            predicted_class, confidence = cough_predict(temp_audio_file.name, "../ai/cough/sounddr_data/output/covid_model_fold0.pkl")
+            predicted_class, confidence = cough_predict(temp_audio_file.name, "server/ai/cough/sounddr_data/output/covid_model_fold0.pkl")
             print("response received")
 
             # Explicitly close the temporary audio file
@@ -33,7 +33,7 @@ def upload():
             print(predicted_class, confidence)
             response = jsonify({
                 "diagnosis": bool(predicted_class),
-                "certainty": f"{confidence * 100:.2f}%"
+                "certainty": round(confidence * 100, 2)
             })
             print("sent")
             print("response sent: ",response)
@@ -45,7 +45,7 @@ def upload():
         print(str(e))
         return response, 500
 #ROUTE TO RECEIVE SYMPTOM DATA AND RETURN PREDICTION (0-3)
-@app.route('/predict_symptoms', methods=['POST'])
+@app.route('/api/predict_symptoms', methods=['POST'])
 def predict():
     try:
         data = request.json
@@ -75,7 +75,7 @@ def predict():
                     1 if data['history'] == "yes" else 0
                 ]
         print(input_data)
-        symptom_prediction = predict_symptoms(input_data, "../ai/symptoms/modelv1ADAM.pkl")
+        symptom_prediction = predict_symptoms(input_data, "server/ai/symptoms/modelv1ADAM.pkl")
         response = jsonify({
             "diagnosis": symptom_prediction[0],
             "certainty":symptom_prediction[1]
@@ -89,5 +89,5 @@ def predict():
         print(str(e))
         return response, 500
 if __name__ == ('__main__'):
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=False, ssl_context=('/etc/letsencrypt/live/coughscan.net/fullchain.pem', '/etc/letsencrypt/live/coughscan.net/privkey.pem'))
 
