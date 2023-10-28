@@ -8,7 +8,7 @@ from flask_cors import CORS
 from server.ai.symptoms.predict import predict_symptoms
 from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["https://coughscan.net", "http://coughscan.net"]}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 print("STARTED")
 @app.route('/api/upload', methods=['POST'])
 def upload():
@@ -49,33 +49,8 @@ def upload():
 def predict():
     try:
         data = request.json
-        print(data)
-        input_data = [
-                    data['fever'],
-                    data['tiredness'],
-                    data['dryCough'],
-                    data['breathingDifficulty'],
-                    data['soreThroat'],
-                    data['pains'],
-                    data['nasalCongestion'],
-                    data['runnyNose'],
-                    data['diarrhea'],
-                    data['noSymptoms'],
-                    data['noneExperiencing'],
-                    1 if data['ageRange'] == "0-9" else 0,
-                    1 if data['ageRange'] == "10-19" else 0,
-                    1 if data['ageRange'] == "20-24" else 0,
-                    1 if data['ageRange'] == "25-59" else 0,
-                    1 if data['ageRange'] == "60+" else 0,
-                    1 if data['gender'] == "male" else 0,
-                    1 if data['gender'] == "female" else 0,
-                    1 if data['gender'] == "other" else 0,
-                    1 if data['history'] == "dont-know" else 0,
-                    1 if data['history'] == "no" else 0,
-                    1 if data['history'] == "yes" else 0
-                ]
-        print(input_data)
-        symptom_prediction = predict_symptoms(input_data, "server/ai/symptoms/modelv1ADAM.pkl")
+
+        symptom_prediction = predict_symptoms(data, "server/ai/symptoms/covid_model.pkl")
         response = jsonify({
             "diagnosis": symptom_prediction[0],
             "certainty":symptom_prediction[1]

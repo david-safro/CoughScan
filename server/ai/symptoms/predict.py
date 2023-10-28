@@ -4,8 +4,8 @@ import torch
 from server.ai.symptoms.main import *
 
 
-def predict(input_json):
-    with open('covid_model.pkl', 'rb') as file:
+def predict_symptoms(input_json, pkl):
+    with open(pkl, 'rb') as file:
         loaded_model = pickle.load(file)
     # Convert input JSON to PyTorch tensor
     input_dict = json.loads(input_json)
