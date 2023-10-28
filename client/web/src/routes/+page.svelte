@@ -28,10 +28,10 @@
     </h1>
     <h2>With just a cough</h2>
     <p>
-        Rapidly improving AI technology now allows the diagnosis<br>of covid from a cough with an accuracy of 85%,<br>and it is only getting better. Try it out yourself now
+        Rapidly improving AI technology now allows the diagnosis<br>of COVID-19 from a cough with an accuracy of 85%,<br>and it is only getting better. Try it out yourself now.
     </p>
     <p>
-        Additionally, you can input your symptoms directly<br>which can diagnose you as symptomatic or asymptomatic<br>for a virus. Learn more <a on:click={() => {window.location.href = "/guide"}}>here.</a>
+        Additionally, you can input your symptoms directly<br>which can diagnose you as symptomatic for COVID-19<br> with a 95% accuracy. Learn more <a on:click={() => {window.location.href = "/guide"}}>here.</a>
     </p>
     <p>
         If you need help taking the tests, view the <a on:click={() => {window.location.href = "/guide"}}>guide.</a>

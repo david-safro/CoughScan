@@ -87,6 +87,7 @@
             coughTestOptions
         }
 
+        triggerLoadingScreen()
         const response = await fetch("https://coughscan.net/api/upload", {
             headers: {
                 'Content-Type': 'audio/wav',
@@ -101,10 +102,19 @@
             window.location.href = `/diagnosis/${encodeURIComponent(JSON.stringify(pageData))}`
         }
     }
+    
+    function triggerLoadingScreen() {
+        (document.getElementById("loading") as HTMLDivElement).style.opacity = "1";
+        (document.getElementById("test-content") as HTMLDivElement).style.display = "none";
+    }
 </script>
 
 <link rel="stylesheet" href="/css/cough-test.css"/>
-<main>
+<div id="loading">
+    <div></div>
+    <span>If it takes longer than 10 seconds, please refresh the page and take the test again.</span>
+</div>
+<main id="test-content">
     <div id="modal" class="invisible">
         <h3>Upload Cough</h3>
         <audio id="cough-replay" controls></audio>

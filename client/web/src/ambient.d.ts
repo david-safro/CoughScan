@@ -19,7 +19,6 @@ declare interface SymptomInputOptions {
     runnyNose: boolean,
     diarrhea: boolean,
     noSymptoms: boolean,
-    noneExperiencing: boolean,
     ageGroup: "0-9" | "10-19" | "20-24" | "25-59" | "60+",
     gender: "male" | "female" | "transgender",
     contactHistory: "dont-know" | "no" | "yes"

@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
         android:id="@+id/button_record"
+        android:layout_width="187dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="111dp"
+        android:fontFamily="@font/roboto"
+        android:text="Record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Record"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="111dp" />
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto"
+        android:text="Cough Test"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_light"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_record">
+
+        <CheckBox
+            android:id="@+id/fever_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/roboto"
+            android:text="Fever" />
+
+        <Spinner
+            android:id="@+id/gender_selector"
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
+        <Spinner
+            android:id="@+id/age_range_selector"
+            android:layout_width="match_parent"
+            android:layout_height="53dp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

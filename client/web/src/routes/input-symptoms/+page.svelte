@@ -30,6 +30,7 @@
         });
 
         try {
+            triggerLoadingScreen()
             const response = await fetch('https://coughscan.net/api/predict_symptoms', {
                 method: 'POST',
                 headers: {
@@ -55,31 +56,42 @@
             console.error('Error while sending the data', error);
         }
     }
+
+    function triggerLoadingScreen() {
+        (document.getElementById("loading") as HTMLDivElement).style.opacity = "1";
+        (document.getElementById("test-content") as HTMLDivElement).style.display = "none";
+    }
 </script>
 
+<div id="loading">
+    <div></div>
+    <span>If it takes longer than 10 seconds, please refresh the page and take the test again.</span>
+</div>
 <link href="/css/input-symptoms.css" rel="stylesheet"/>
-<h1>Input Symptoms</h1>
-<form action="/" method="post" on:submit={handleSubmit}>
-    {#each symptomInputOptionLabels as [symptomInputOptionLabel, propertyName]}
-    <div>
-        <label for={propertyName}>{symptomInputOptionLabel}</label>
+<main id="test-content">
+    <h1>Input Symptoms</h1>
+    <form action="/" method="post" on:submit={handleSubmit}>
+        {#each symptomInputOptionLabels as [symptomInputOptionLabel, propertyName]}
         <div>
-            {#if symptomInputOptionLabel.includes("[")}
-            <select name={propertyName}>
-                {#each symptomInputOptionLabel.substring(
-                    symptomInputOptionLabel.indexOf("[") + 1,
-                    symptomInputOptionLabel.indexOf("]")
-                ).split(", ") as option}
-                    <option value={option.replaceAll(" ", "-").replaceAll(`'`, "").toLowerCase()}>{option}</option>
-                {/each}
-            </select>
-            {:else}
-            <input type="checkbox" data-name={propertyName} on:change={handleCheck}/>
-            <input type="hidden" name={propertyName} class={propertyName} value="false"/>
-            {/if}
-            <span class="style"/>
+            <label for={propertyName}>{symptomInputOptionLabel}</label>
+            <div>
+                {#if symptomInputOptionLabel.includes("[")}
+                <select name={propertyName}>
+                    {#each symptomInputOptionLabel.substring(
+                        symptomInputOptionLabel.indexOf("[") + 1,
+                        symptomInputOptionLabel.indexOf("]")
+                    ).split(", ") as option}
+                        <option value={option.replaceAll(" ", "-").replaceAll(`'`, "").toLowerCase()}>{option}</option>
+                    {/each}
+                </select>
+                {:else}
+                <input type="checkbox" data-name={propertyName} on:change={handleCheck}/>
+                <input type="hidden" name={propertyName} class={propertyName} value="false"/>
+                {/if}
+                <span class="style"/>
+            </div>
         </div>
-    </div>
-    {/each}
-    <button type="submit">Submit</button>
-</form>
+        {/each}
+        <button type="submit">Submit</button>
+    </form>
+</main>

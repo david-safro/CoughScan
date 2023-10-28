@@ -100,15 +100,15 @@
     <p class="para">
         {#if diagnosisInfo.type == "symptoms"}
             {#if diagnosisInfo.diagnosis}
-            It is likely that you are sick with some virus (not necessarily COVID-19). This means you can take the <a on:click={() => {window.location.href = "/cough-test"}}>cough test</a> to predict if you have COVID.
+            It is likely that you are sick with some virus that is either COVID-19 or one similar. This means you can take the <a on:click={() => {window.location.href = "/cough-test"}}>cough test</a> to predict if you have COVID-19 more accurately.
             {:else}
-            You likely are not sick. This means you can take the <a on:click={() => {window.location.href = "/cough-test"}}>cough test</a> to determine if you have COVID.
+            You likely are not sick. You almost certainly do not have COVID-19. However, if you believe this is incorrect you should take a physical COVID-19 test.
             {/if}
         {:else}
             {#if diagnosisInfo.diagnosis}
             It is likely that you have COVID-19. However, if you don't think you are sick with any virus, then the test could be less accurate. Take the symptoms test at <a on:click={() => {window.location.href = "/input-symptoms"}}>/input-symptoms</a> to tell if you are sick. If you are still unsure about the result, take a physical Covid test. If you are sure you have Covid, make sure to quarantine yourself as much as possible to stop the spread.
             {:else}
-            You likely do not have COVID-19. However, if you feel this diagnosis is innacurate you may want to retake this test to make sure, and if you are still unsure you should take a physical test.
+            You likely do not have COVID-19. However, if you feel this diagnosis is innacurate you may want to retake this test, and if you are still unsure you should take a physical test.
             {/if}
             <br><br><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">Find the COVID-19 safety guidelines here.</a>
         {/if}

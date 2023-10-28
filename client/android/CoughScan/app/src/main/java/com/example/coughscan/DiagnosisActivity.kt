@@ -5,9 +5,9 @@ import android.os.Handler
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.coughscan.R
 
 class DiagnosisActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_diagnosis)
@@ -16,6 +16,15 @@ class DiagnosisActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.diagnosis_display).text = "Diagnosis: ${if (diagnosis) "Positive" else "Negative"}"
 
         setCertaintyDisplay()
+
+        val fever = intent.getBooleanExtra("fever", false)
+        findViewById<TextView>(R.id.fever_text).text = "Fever: $fever"
+
+        val age = intent.getStringExtra("age")
+        findViewById<TextView>(R.id.age_range_text).text = "Age: $age"
+
+        val gender = intent.getStringExtra("gender")
+        findViewById<TextView>(R.id.gender_text).text = "Gender: $gender"
     }
 
     private fun setCertaintyDisplay() {
