@@ -16,5 +16,6 @@ export const symptomInputOptionLabels = [
     ["Have you attended a large gathering recently?","large-gathering"],
     ["Have you visited public exposed places recently?","public-places"],
     ["Do you have family working in public exposed places?", "family-public"],
-    ["Have you been wearing masks consistently recently?", "masks"]
+    ["Have you been wearing masks consistently recently?", "masks"],
+    ["Do you have hyper tensions?", "Hyper Tension"]
 ];
