@@ -128,10 +128,30 @@ with torch.no_grad():
         y_true.extend(labels.numpy())
     accuracy = accuracy_score(y_true, y_pred)
     print(f'Accuracy: {accuracy * 100:.2f}%')
-with open('covid_model.pkl', 'wb') as file:
-    pickle.dump(model, file)
+#with open('covid_model.pkl', 'wb') as file:
+ #   pickle.dump(model, file)
 
 
 # Load the trained model from the .pkl file
 
 
+# Define the predict function
+def predict_symptoms(input_json, pkl):
+    with open(pkl, 'rb') as file:
+        loaded_model = pickle.load(file)
+    # Convert input JSON to PyTorch tensor
+    input_dict = json.loads(input_json)
+    input_dict['sanitization'] = 1  # Add 'sanitization' feature with value 1
+    input_values = [input_dict[col] for col in X_train.columns]
+    input_tensor = torch.tensor(input_values, dtype=torch.float32).unsqueeze(0)
+
+    # Make a prediction with the trained model
+    loaded_model.eval()
+    with torch.no_grad():
+        output = loaded_model(input_tensor)
+        _, predicted = torch.max(output.data, 1)
+        confidence = torch.nn.functional.softmax(output, dim=1)[0][predicted].item()
+
+    # Convert prediction to boolean and return with confidence
+    prediction = bool(predicted.item())
+    return prediction, confidence

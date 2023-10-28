@@ -5,7 +5,7 @@ import traceback
 import torch
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from server.ai.symptoms.predict import predict_symptoms
+from server.ai.symptoms.main import predict_symptoms
 from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
