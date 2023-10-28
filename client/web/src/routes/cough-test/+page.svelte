@@ -105,6 +105,7 @@
     
     function triggerLoadingScreen() {
         (document.getElementById("loading") as HTMLDivElement).style.opacity = "1";
+        (document.getElementById("loading") as HTMLDivElement).style.display = "block";
         (document.getElementById("test-content") as HTMLDivElement).style.display = "none";
     }
 </script>
