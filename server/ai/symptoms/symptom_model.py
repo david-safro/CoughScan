@@ -1,25 +1,30 @@
 import torch
-import torch.nn as nn
-class SymNet(nn.Module):
-    def __init__(self, X_train):
-        super(SymNet, self).__init__()
-        self.fc1 = nn.Linear(X_train.shape[1], 256)
-        self.bn1 = nn.BatchNorm1d(256)
-        self.dropout1 = nn.Dropout(0.5)
-        self.fc2 = nn.Linear(256, 128)
-        self.bn2 = nn.BatchNorm1d(128)
-        self.dropout2 = nn.Dropout(0.4)
-        self.fc3 = nn.Linear(128, 64)
-        self.bn3 = nn.BatchNorm1d(64)
-        self.dropout3 = nn.Dropout(0.3)
-        self.fc4 = nn.Linear(64, 4)
+from torch.utils.data import Dataset
+
+# Custom dataset class
+class CovidDataset(Dataset):
+    def __init__(self, features, labels):
+        self.features = torch.tensor(features.values, dtype=torch.float32)
+        self.labels = torch.tensor(labels.values, dtype=torch.long)
+
+    def __len__(self):
+        return len(self.labels)
+
+    def __getitem__(self, index):
+        return self.features[index], self.labels[index]
+
+# Neural network class
+class CovidNet(nn.Module):
+    def __init__(self, input_size, hidden_size, num_classes):
+        super(CovidNet, self).__init__()
+        self.fc1 = nn.Linear(input_size, hidden_size)
+        self.relu = nn.ReLU()
+        self.fc2 = nn.Linear(hidden_size, num_classes)
+        self.softmax = nn.Softmax(dim=1)
 
     def forward(self, x):
-        x = torch.relu(self.bn1(self.fc1(x)))
-        x = self.dropout1(x)
-        x = torch.relu(self.bn2(self.fc2(x)))
-        x = self.dropout2(x)
-        x = torch.relu(self.bn3(self.fc3(x)))
-        x = self.dropout3(x)
-        x = self.fc4(x)
-        return x
+        out = self.fc1(x)
+        out = self.relu(out)
+        out = self.fc2(out)
+        out = self.softmax(out)
+        return out
