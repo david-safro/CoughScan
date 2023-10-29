@@ -40,7 +40,6 @@ a {
 #fade-container {
     opacity: 0;
     transition: opacity 0.5s ease-out;
-    height: calc(100vh - 5rem);
 }
 
 ::-webkit-scrollbar {
