@@ -5,7 +5,7 @@ import traceback
 import torch
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from server.ai.symptoms.main import predict_symptoms
+from server.ai.symptoms.predict import symptom_predict
 from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
@@ -19,16 +19,14 @@ def upload():
         with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as temp_audio_file:
             temp_audio_file.write(audio_data)
             temp_audio_file.flush()
-            temp_audio_file.seek(0)  # Rewind the file pointer
+            temp_audio_file.seek(0)
 
             print("tempfile created")
             predicted_class, confidence = cough_predict(temp_audio_file.name, "server/ai/cough/sounddr_data/output/covid_model_fold0.pkl")
             print("response received")
 
-            # Explicitly close the temporary audio file
             temp_audio_file.close()
 
-            # Clean up the temporary audio file
             os.remove(temp_audio_file.name)
             print(predicted_class, confidence)
             response = jsonify({
@@ -44,13 +42,13 @@ def upload():
         print(traceback.format_exc())
         print(str(e))
         return response, 500
-#ROUTE TO RECEIVE SYMPTOM DATA AND RETURN PREDICTION (0-3)
+
 @app.route('/api/predict_symptoms', methods=['POST'])
 def predict():
     try:
         data = request.json
 
-        symptom_prediction = predict_symptoms(data, "server/ai/symptoms/covid_model.pkl")
+        symptom_prediction = symptom_predict(data, "server/ai/symptoms/covid_model.pkl")
         response = jsonify({
             "diagnosis": symptom_prediction[0],
             "certainty":symptom_prediction[1]
