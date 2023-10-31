@@ -51,6 +51,7 @@ class CoughActivity : AppCompatActivity() {
         setContentView(R.layout.activity_cough)
 
         fileName = "${externalCacheDir?.absolutePath}/audiorecordtest.webm"
+        Log.d("main", fileName!!)
 
         val itemsAge = arrayOf("0-9", "10-19", "20-24", "25-59", "60+")
         val adapterAge = ArrayAdapter(this, android.R.layout.simple_spinner_item, itemsAge)
@@ -63,9 +64,7 @@ class CoughActivity : AppCompatActivity() {
                 selectedAge = itemsAge[position]
             }
 
-            override fun onNothingSelected(p0: AdapterView<*>?) {
-
-            }
+            override fun onNothingSelected(p0: AdapterView<*>?) {}
         }
 
         val itemsGender = arrayOf("Male", "Female", "Other")
@@ -76,12 +75,10 @@ class CoughActivity : AppCompatActivity() {
 
         genderSelector.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                selectedGender = itemsAge[position]
+                selectedGender = itemsGender[position]
             }
 
-            override fun onNothingSelected(p0: AdapterView<*>?) {
-
-            }
+            override fun onNothingSelected(p0: AdapterView<*>?) {}
         }
 
         requestPermissions()
@@ -90,10 +87,9 @@ class CoughActivity : AppCompatActivity() {
 
     private fun initializeRecord() {
         recordButton = findViewById<Button>(R.id.button_record)
-        mediaRecorder = MediaRecorder()
 
         recordButton!!.setOnClickListener {
-            if (recording) stopRecording() else startRecording()
+            if (recording) {stopRecording() } else { startRecording()}
             recording = !recording;
         }
     }
@@ -115,9 +111,11 @@ class CoughActivity : AppCompatActivity() {
     }
 
     private fun startRecording() {
+        requestPermissions()
+        mediaRecorder = MediaRecorder()
         recordButton!!.text = "Recording..."
         mediaRecorder?.setAudioSource(MediaRecorder.AudioSource.MIC)
-        mediaRecorder?.setOutputFormat(MediaRecorder.OutputFormat.WEBM)
+        mediaRecorder?.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
         mediaRecorder?.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
         mediaRecorder?.setOutputFile(fileName)
 
@@ -139,32 +137,17 @@ class CoughActivity : AppCompatActivity() {
         postCough()
     }
 
-    private fun webmToWav() {
-        val retriever = FFmpegMediaMetadataRetriever()
-        retriever.setDataSource(fileName)
-
-        val command = arrayOf(
-            "-i", fileName,
-            "-vn",
-            "-acodec", "pcm_s16le",
-            fileName
-        )
-
-        val result = FFmpeg.execute(command)
-        return result
-    }
-
     private fun postCough() {
         val file = File(fileName)
 
-        fever = findViewById<CheckBox>(R.id.fever_check_box).isActivated
+        fever = findViewById<CheckBox>(R.id.fever_check_box).isChecked
 
-        val requestFile = RequestBody.create("video/webm".toMediaTypeOrNull(), file)
+        val requestFile = RequestBody.create("audio/webm".toMediaTypeOrNull(), file)
 
         val filePart = MultipartBody.Part.createFormData("file", file.name, requestFile)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://coughscan.net/upload")
+            .baseUrl("https://coughscan.net/upload/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -178,7 +161,7 @@ class CoughActivity : AppCompatActivity() {
 
                 val intent = Intent(this@CoughActivity, DiagnosisActivity::class.java)
                 intent.putExtra("certainty", 89)
-                intent.putExtra("diagnosis", true)
+                intent.putExtra("diagnosis", false)
                 intent.putExtra("age", selectedAge)
                 intent.putExtra("gender", selectedGender)
                 intent.putExtra("fever", fever)
@@ -186,7 +169,7 @@ class CoughActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<ApiModels.ApiResponse>, t: Throwable) {
-                t.message?.let { Log.d("main", t.message!!) }
+                throw t
             }
         })
     }

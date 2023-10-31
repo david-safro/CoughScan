@@ -1,9 +1,9 @@
 package com.example.coughscan
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DiagnosisActivity::class.java)
             intent.putExtra("certainty", 89)
             intent.putExtra("diagnosis", true)
+            intent.putExtra("age", "10-19")
+            intent.putExtra("gender", "Male")
+            intent.putExtra("fever", "true")
             startActivity(intent)
         };
     }

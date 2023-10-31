@@ -29,6 +29,7 @@ class DiagnosisActivity : AppCompatActivity() {
 
     private fun setCertaintyDisplay() {
         val certainty = intent.getIntExtra("certainty", 0)
+        findViewById<TextView>(R.id.confidence_text).text = "Confidence: $certainty%"
         val certaintyDisplay = findViewById<ProgressBar>(R.id.confidence_display)
 
         val delayMillis = 2L
