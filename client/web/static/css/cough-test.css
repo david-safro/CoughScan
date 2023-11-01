@@ -1,3 +1,11 @@
+#fade-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
 #loading {
     opacity: 0;
     position: absolute;
