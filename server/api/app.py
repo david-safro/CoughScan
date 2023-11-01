@@ -6,6 +6,7 @@ import torch
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from server.ai.symptoms.predict import symptom_predict
+from server.ai.symptoms.model import CovidNet
 from server.ai.cough.prediction import cough_predict
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})

@@ -58,5 +58,4 @@ with torch.no_grad():
     print(f'Accuracy: {accuracy * 100:.2f}%')
 
 # Save the model
-with open('covid_model.pkl', 'wb') as file:
-    pickle.dump(model, file)
+torch.save(model, 'covid_model.pkl')
