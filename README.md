@@ -1,6 +1,6 @@
 # CoughScan
 
-Now availible at [coughscan.net](https://coughscan.net)!
+Now available at [coughscan.net](https://coughscan.net)!
 
 Android + web app that leverages a two neural network solution to diagnosing COVID-19 from almost any device, anywhere.
 
