@@ -1,4 +1,7 @@
 # CoughScan
+
+Now availible at coughscan.net!
+
 Android + web app that leverages a two neural network solution to diagnosing COVID-19 from almost any device, anywhere.
 
 Clientside made by Ian Porell, API/Neural Networks made by David Safro
