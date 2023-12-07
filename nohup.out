@@ -1,0 +1,1676 @@
+[2023-11-01 06:01:47 +0000] [171585] [INFO] Starting gunicorn 21.2.0
+[2023-11-01 06:01:47 +0000] [171585] [INFO] Listening at: http://0.0.0.0:5000 (171585)
+[2023-11-01 06:01:47 +0000] [171585] [INFO] Using worker: sync
+[2023-11-01 06:01:47 +0000] [171586] [INFO] Booting worker with pid: 171586
+[2023-11-01 06:01:47 +0000] [171587] [INFO] Booting worker with pid: 171587
+[2023-11-01 06:01:47 +0000] [171588] [INFO] Booting worker with pid: 171588
+[2023-11-01 06:01:47 +0000] [171589] [INFO] Booting worker with pid: 171589
+2023-11-01 06:01:52.528376: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 06:01:52.528432: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 06:01:52.528486: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 06:01:52.554620: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 06:01:52.614775: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 06:01:52.614819: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 06:01:52.614852: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 06:01:52.644320: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 06:01:52.705781: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 06:01:52.705839: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 06:01:52.706178: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 06:01:52.719731: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 06:01:52.883381: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 06:01:52.883428: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 06:01:52.891507: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 06:01:52.909749: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 06:01:55.568533: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-01 06:01:55.656057: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-01 06:01:55.757155: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-01 06:01:55.864997: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-01 06:03:20 +0000] [171634] [INFO] Starting gunicorn 21.2.0
+[2023-11-01 06:03:20 +0000] [171634] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-11-01 06:03:20 +0000] [171634] [ERROR] Retrying in 1 second.
+[2023-11-01 06:03:21 +0000] [171634] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-11-01 06:03:21 +0000] [171634] [ERROR] Retrying in 1 second.
+[2023-11-01 06:03:22 +0000] [171634] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-11-01 06:03:22 +0000] [171634] [ERROR] Retrying in 1 second.
+[2023-11-01 06:03:23 +0000] [171634] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-11-01 06:03:23 +0000] [171634] [ERROR] Retrying in 1 second.
+[2023-11-01 06:03:24 +0000] [171634] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-11-01 06:03:24 +0000] [171634] [ERROR] Retrying in 1 second.
+[2023-11-01 06:03:25 +0000] [171634] [ERROR] Can't connect to ('0.0.0.0', 5000)
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [06:03:28] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-01 06:03:44 +0000] [171585] [INFO] Handling signal: hup
+[2023-11-01 06:03:44 +0000] [171585] [INFO] Hang up: Master
+[2023-11-01 06:03:44 +0000] [171651] [INFO] Booting worker with pid: 171651
+[2023-11-01 06:03:44 +0000] [171652] [INFO] Booting worker with pid: 171652
+[2023-11-01 06:03:44 +0000] [171650] [INFO] Booting worker with pid: 171650
+[2023-11-01 06:03:44 +0000] [171653] [INFO] Booting worker with pid: 171653
+[2023-11-01 06:03:44 +0000] [171585] [ERROR] Worker (pid:171589) was sent SIGHUP!
+[2023-11-01 06:03:44 +0000] [171585] [ERROR] Worker (pid:171586) was sent SIGHUP!
+[2023-11-01 06:03:44 +0000] [171585] [ERROR] Worker (pid:171587) was sent SIGHUP!
+[2023-11-01 06:03:44 +0000] [171585] [ERROR] Worker (pid:171588) was sent SIGHUP!
+2023-11-01 06:03:49.036750: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 06:03:49.036811: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 06:03:49.036857: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 06:03:49.040040: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 06:03:49.040084: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 06:03:49.040114: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 06:03:49.042130: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 06:03:49.042158: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 06:03:49.042189: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 06:03:49.048064: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 06:03:49.048094: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 06:03:49.048120: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 06:03:49.059670: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 06:03:49.059670: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 06:03:49.061725: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 06:03:49.065124: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 06:03:51.946715: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-01 06:03:51.947550: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-01 06:03:51.957116: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-01 06:03:51.967564: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [06:05:34] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-01 11:33:50 +0000] [171653] [WARNING] Invalid request from ip=194.165.16.34: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-01 15:19:23 +0000] [171652] [WARNING] Invalid request from ip=193.29.13.22: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [18:53:35] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [19:05:41] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+[2023-11-01 23:33:55 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:171651)
+[2023-11-01 23:33:55 +0000] [171651] [INFO] Worker exiting (pid: 171651)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.8506519
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.8189344
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.96758235
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-01 23:33:56 +0000] [171585] [ERROR] Worker (pid:171651) was sent SIGKILL! Perhaps out of memory?
+[2023-11-01 23:33:56 +0000] [195336] [INFO] Booting worker with pid: 195336
+2023-11-01 23:34:01.007168: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-01 23:34:01.007438: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-01 23:34:01.009786: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-01 23:34:01.284425: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 23:34:03.009169: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-01 23:34:10.592820: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-02 02:22:47 +0000] [171653] [WARNING] Invalid request from ip=172.104.4.17: Invalid HTTP request line: ''
+[2023-11-02 02:22:47 +0000] [171653] [WARNING] Invalid request from ip=172.104.4.17: Invalid HTTP Version: 'RTSP/1.0'
+[2023-11-02 02:23:08 +0000] [195336] [WARNING] Invalid request from ip=172.104.4.17: Invalid HTTP request line: 'HELP'
+[2023-11-02 02:23:28 +0000] [195336] [WARNING] Invalid request from ip=172.104.4.17: Invalid HTTP Version: 'SIP/2.0'
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [02:40:37] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [02:41:11] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-02 17:02:18 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:171653)
+[2023-11-02 17:02:18 +0000] [171653] [INFO] Worker exiting (pid: 171653)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.9442965
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.9437359
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-02 17:02:19 +0000] [171585] [ERROR] Worker (pid:171653) was sent SIGKILL! Perhaps out of memory?
+[2023-11-02 17:02:19 +0000] [208035] [INFO] Booting worker with pid: 208035
+2023-11-02 17:02:25.368382: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-02 17:02:25.368444: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-02 17:02:25.374174: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-02 17:02:25.792038: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-02 17:02:27.638965: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-02 17:02:36.160717: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [21:12:40] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-02 23:35:36 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:208035)
+[2023-11-02 23:35:36 +0000] [208035] [INFO] Worker exiting (pid: 208035)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.94630337
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-02 23:35:37 +0000] [171585] [ERROR] Worker (pid:208035) was sent SIGKILL! Perhaps out of memory?
+[2023-11-02 23:35:37 +0000] [210785] [INFO] Booting worker with pid: 210785
+2023-11-02 23:35:40.198914: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-02 23:35:40.198966: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-02 23:35:40.199016: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-02 23:35:40.210847: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-02 23:35:41.553252: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [16:53:10] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-03 23:32:16 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:195336)
+[2023-11-03 23:32:16 +0000] [195336] [INFO] Worker exiting (pid: 195336)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.83013976
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.96408296
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.83596426
+sent
+response sent:  <Response 37 bytes [200 OK]>
+Received audio data
+tempfile created
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py", line 175, in load
+    y, sr_native = __soundfile_load(path, offset, duration, dtype)
+  File "/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py", line 208, in __soundfile_load
+    context = sf.SoundFile(path)
+  File "/usr/local/lib/python3.10/dist-packages/soundfile.py", line 658, in __init__
+    self._file = self._open(file, mode_int, closefd)
+  File "/usr/local/lib/python3.10/dist-packages/soundfile.py", line 1216, in _open
+    raise LibsndfileError(err, prefix="Error opening {0!r}: ".format(self.name))
+soundfile.LibsndfileError: Error opening '/tmp/tmp1eqpbowl.wav': Format not recognised.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/CoughScan/server/api/app.py", line 26, in upload
+    predicted_class, confidence = cough_predict(temp_audio_file.name, "server/ai/cough/sounddr_data/output/covid_model_fold0.pkl")
+  File "/root/CoughScan/server/ai/cough/prediction.py", line 7, in cough_predict
+    features = make_nonsemantic_frill_nofrontend_feat(audio_file)
+  File "/root/CoughScan/server/ai/cough/feature.py", line 73, in make_nonsemantic_frill_nofrontend_feat
+    waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+  File "/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py", line 183, in load
+    y, sr_native = __audioread_load(path, offset, duration, dtype)
+  File "/usr/local/lib/python3.10/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/local/lib/python3.10/dist-packages/librosa/util/decorators.py", line 59, in __wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py", line 239, in __audioread_load
+    reader = audioread.audio_open(path)
+  File "/usr/local/lib/python3.10/dist-packages/audioread/__init__.py", line 127, in audio_open
+    return BackendClass(path)
+  File "/usr/local/lib/python3.10/dist-packages/audioread/rawread.py", line 62, in __init__
+    self._file = aifc.open(self._fh)
+  File "/usr/lib/python3.10/aifc.py", line 917, in open
+    return Aifc_read(f)
+  File "/usr/lib/python3.10/aifc.py", line 358, in __init__
+    self.initfp(f)
+  File "/usr/lib/python3.10/aifc.py", line 314, in initfp
+    chunk = Chunk(file)
+  File "/usr/lib/python3.10/chunk.py", line 63, in __init__
+    raise EOFError
+EOFError
+
+
+Received audio data
+tempfile created
+0
+response received
+0 0.93198085
+sent
+response sent:  <Response 37 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.9602864
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-03 23:32:17 +0000] [171585] [ERROR] Worker (pid:195336) was sent SIGKILL! Perhaps out of memory?
+[2023-11-03 23:32:17 +0000] [226090] [INFO] Booting worker with pid: 226090
+2023-11-03 23:32:21.592501: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-03 23:32:21.592568: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-03 23:32:21.594202: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-03 23:32:21.950956: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-03 23:32:24.385405: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-03 23:32:32.203546: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-04 01:58:37 +0000] [171652] [WARNING] Invalid request from ip=109.107.183.6: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-04 02:59:21 +0000] [226090] [WARNING] Invalid request from ip=109.107.183.6: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-04 23:34:53 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:171652)
+[2023-11-04 23:34:53 +0000] [171652] [INFO] Worker exiting (pid: 171652)
+STARTED
+success
+Received audio data
+tempfile created
+0
+response received
+0 0.7960973
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.9049876
+sent
+response sent:  <Response 37 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.90456176
+sent
+response sent:  <Response 38 bytes [200 OK]>
+success
+Received audio data
+tempfile created
+0
+response received
+0 0.98064345
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.9198917
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py", line 175, in load
+    y, sr_native = __soundfile_load(path, offset, duration, dtype)
+  File "/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py", line 208, in __soundfile_load
+    context = sf.SoundFile(path)
+  File "/usr/local/lib/python3.10/dist-packages/soundfile.py", line 658, in __init__
+    self._file = self._open(file, mode_int, closefd)
+  File "/usr/local/lib/python3.10/dist-packages/soundfile.py", line 1216, in _open
+    raise LibsndfileError(err, prefix="Error opening {0!r}: ".format(self.name))
+soundfile.LibsndfileError: Error opening '/tmp/tmpkaemmcsm.wav': Format not recognised.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/CoughScan/server/api/app.py", line 26, in upload
+    predicted_class, confidence = cough_predict(temp_audio_file.name, "server/ai/cough/sounddr_data/output/covid_model_fold0.pkl")
+  File "/root/CoughScan/server/ai/cough/prediction.py", line 7, in cough_predict
+    features = make_nonsemantic_frill_nofrontend_feat(audio_file)
+  File "/root/CoughScan/server/ai/cough/feature.py", line 73, in make_nonsemantic_frill_nofrontend_feat
+    waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+  File "/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py", line 183, in load
+    y, sr_native = __audioread_load(path, offset, duration, dtype)
+  File "/usr/local/lib/python3.10/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/local/lib/python3.10/dist-packages/librosa/util/decorators.py", line 59, in __wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py", line 239, in __audioread_load
+    reader = audioread.audio_open(path)
+  File "/usr/local/lib/python3.10/dist-packages/audioread/__init__.py", line 127, in audio_open
+    return BackendClass(path)
+  File "/usr/local/lib/python3.10/dist-packages/audioread/rawread.py", line 62, in __init__
+    self._file = aifc.open(self._fh)
+  File "/usr/lib/python3.10/aifc.py", line 917, in open
+    return Aifc_read(f)
+  File "/usr/lib/python3.10/aifc.py", line 358, in __init__
+    self.initfp(f)
+  File "/usr/lib/python3.10/aifc.py", line 314, in initfp
+    chunk = Chunk(file)
+  File "/usr/lib/python3.10/chunk.py", line 63, in __init__
+    raise EOFError
+EOFError
+
+
+Received audio data
+tempfile created
+0
+response received
+0 0.88297606
+sent
+response sent:  <Response 37 bytes [200 OK]>
+[2023-11-04 23:34:54 +0000] [171585] [ERROR] Worker (pid:171652) was sent SIGKILL! Perhaps out of memory?
+[2023-11-04 23:34:54 +0000] [239139] [INFO] Booting worker with pid: 239139
+2023-11-04 23:35:03.608047: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-04 23:35:03.608114: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-04 23:35:03.608991: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-04 23:35:03.775420: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-04 23:35:06.281229: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-04 23:35:15.272029: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-05 23:33:30 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:226090)
+[2023-11-05 23:33:30 +0000] [226090] [INFO] Worker exiting (pid: 226090)
+STARTED
+[2023-11-05 23:33:31 +0000] [171585] [ERROR] Worker (pid:226090) was sent SIGKILL! Perhaps out of memory?
+[2023-11-05 23:33:31 +0000] [258153] [INFO] Booting worker with pid: 258153
+2023-11-05 23:33:37.125971: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-05 23:33:37.126051: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-05 23:33:37.126768: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-05 23:33:37.292740: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-05 23:33:38.865615: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-06 04:47:37 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:210785)
+[2023-11-06 04:47:37 +0000] [210785] [INFO] Worker exiting (pid: 210785)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.78741777
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-06 04:47:38 +0000] [171585] [ERROR] Worker (pid:210785) was sent SIGKILL! Perhaps out of memory?
+[2023-11-06 04:47:39 +0000] [259026] [INFO] Booting worker with pid: 259026
+2023-11-06 04:47:42.285523: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-06 04:47:42.285598: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-06 04:47:42.285657: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-06 04:47:42.309168: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-06 04:47:43.565457: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-06 08:48:41 +0000] [239139] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-06 09:24:03 +0000] [259026] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-06 10:00:27 +0000] [258153] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-06 10:36:11 +0000] [171650] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-06 12:42:01 +0000] [258153] [WARNING] Invalid request from ip=62.122.184.185: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [16:47:28] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-06 23:36:18 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:259026)
+[2023-11-06 23:36:18 +0000] [259026] [INFO] Worker exiting (pid: 259026)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.7635529
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-06 23:36:19 +0000] [171585] [ERROR] Worker (pid:259026) was sent SIGKILL! Perhaps out of memory?
+[2023-11-06 23:36:19 +0000] [266328] [INFO] Booting worker with pid: 266328
+2023-11-06 23:36:23.167881: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-06 23:36:23.168086: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-06 23:36:23.168576: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-06 23:36:23.269988: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-06 23:36:24.774994: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-07 02:16:10 +0000] [258153] [WARNING] Invalid request from ip=80.66.88.204: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-07 07:31:32 +0000] [258153] [WARNING] Invalid request from ip=45.143.201.62: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-07 07:52:09 +0000] [266328] [WARNING] Invalid request from ip=45.143.201.62: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-07 08:12:23 +0000] [258153] [WARNING] Invalid request from ip=45.143.201.62: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-07 08:32:52 +0000] [266328] [WARNING] Invalid request from ip=45.143.201.62: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-07 08:53:38 +0000] [171650] [WARNING] Invalid request from ip=45.143.201.62: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-07 13:58:12 +0000] [266328] [WARNING] Invalid request from ip=62.122.184.185: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-07 17:31:28 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:239139)
+[2023-11-07 17:31:28 +0000] [239139] [INFO] Worker exiting (pid: 239139)
+STARTED
+success
+[2023-11-07 17:31:29 +0000] [171585] [ERROR] Worker (pid:239139) was sent SIGKILL! Perhaps out of memory?
+[2023-11-07 17:31:29 +0000] [277922] [INFO] Booting worker with pid: 277922
+2023-11-07 17:31:33.974416: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-07 17:31:33.974476: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-07 17:31:33.974527: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-07 17:31:33.992939: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-07 17:31:37.207216: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [18:28:27] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [18:28:55] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-07 23:36:44 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:258153)
+[2023-11-07 23:36:44 +0000] [258153] [INFO] Worker exiting (pid: 258153)
+STARTED
+[2023-11-07 23:36:45 +0000] [171585] [ERROR] Worker (pid:258153) was sent SIGKILL! Perhaps out of memory?
+[2023-11-07 23:36:45 +0000] [283071] [INFO] Booting worker with pid: 283071
+2023-11-07 23:36:49.482470: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-07 23:36:49.482530: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-07 23:36:49.482583: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-07 23:36:49.499509: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-07 23:36:51.207545: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-08 09:14:26 +0000] [266328] [WARNING] Invalid request from ip=31.43.185.65: Invalid HTTP request line: '\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie: mstshash=hello'
+[2023-11-08 19:51:23 +0000] [283071] [WARNING] Invalid request from ip=85.209.11.106: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-08 23:33:18 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:171650)
+[2023-11-08 23:33:18 +0000] [171650] [INFO] Worker exiting (pid: 171650)
+STARTED
+success
+Received audio data
+tempfile created
+0
+response received
+0 0.86435235
+sent
+response sent:  <Response 38 bytes [200 OK]>
+success
+success
+Received audio data
+tempfile created
+0
+response received
+0 0.85902435
+sent
+response sent:  <Response 37 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.94049823
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.92481685
+sent
+response sent:  <Response 38 bytes [200 OK]>
+success
+[2023-11-08 23:33:19 +0000] [171585] [ERROR] Worker (pid:171650) was sent SIGKILL! Perhaps out of memory?
+[2023-11-08 23:33:19 +0000] [297165] [INFO] Booting worker with pid: 297165
+2023-11-08 23:33:26.016292: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-08 23:33:26.016355: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-08 23:33:26.016407: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-08 23:33:26.054194: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-08 23:33:28.232177: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-08 23:33:36.439576: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-09 04:40:59 +0000] [297165] [WARNING] Invalid request from ip=45.227.254.49: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-09 08:42:55 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:266328)
+[2023-11-09 08:42:55 +0000] [266328] [INFO] Worker exiting (pid: 266328)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.92481685
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-09 08:42:57 +0000] [171585] [ERROR] Worker (pid:266328) was sent SIGKILL! Perhaps out of memory?
+[2023-11-09 08:42:57 +0000] [304048] [INFO] Booting worker with pid: 304048
+2023-11-09 08:43:00.716306: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-09 08:43:00.716374: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-09 08:43:00.716430: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-09 08:43:00.729398: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-09 08:43:03.148359: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-09 23:33:26 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:283071)
+[2023-11-09 23:33:26 +0000] [283071] [INFO] Worker exiting (pid: 283071)
+STARTED
+[2023-11-09 23:33:27 +0000] [171585] [ERROR] Worker (pid:283071) was sent SIGKILL! Perhaps out of memory?
+[2023-11-09 23:33:27 +0000] [311117] [INFO] Booting worker with pid: 311117
+2023-11-09 23:33:30.941392: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-09 23:33:30.941474: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-09 23:33:30.941561: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-09 23:33:30.958961: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-09 23:33:32.475478: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-10 14:29:40 +0000] [311117] [WARNING] Invalid request from ip=80.66.88.215: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-10 23:19:45 +0000] [311117] [WARNING] Invalid request from ip=152.89.198.113: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-10 23:34:38 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:304048)
+[2023-11-10 23:34:38 +0000] [304048] [INFO] Worker exiting (pid: 304048)
+STARTED
+[2023-11-10 23:34:39 +0000] [171585] [ERROR] Worker (pid:304048) was sent SIGKILL! Perhaps out of memory?
+[2023-11-10 23:34:39 +0000] [326924] [INFO] Booting worker with pid: 326924
+2023-11-10 23:34:42.617517: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-10 23:34:42.617592: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-10 23:34:42.617646: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-10 23:34:42.635426: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-10 23:34:43.928444: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-11 08:07:16 +0000] [297165] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-11 08:46:16 +0000] [277922] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-11 09:04:28 +0000] [311117] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-11 09:22:46 +0000] [311117] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-11 12:29:03 +0000] [297165] [WARNING] Invalid request from ip=152.89.198.113: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-11 13:22:24 +0000] [297165] [WARNING] Invalid request from ip=94.232.43.105: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-11 21:11:25 +0000] [297165] [WARNING] Invalid request from ip=94.232.43.105: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [23:30:42] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-11 23:35:59 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:297165)
+[2023-11-11 23:35:59 +0000] [297165] [INFO] Worker exiting (pid: 297165)
+STARTED
+[2023-11-11 23:36:00 +0000] [171585] [ERROR] Worker (pid:297165) was sent SIGKILL! Perhaps out of memory?
+[2023-11-11 23:36:00 +0000] [353637] [INFO] Booting worker with pid: 353637
+2023-11-11 23:36:05.171928: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-11 23:36:05.171990: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-11 23:36:05.172182: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-11 23:36:05.198016: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-11 23:36:08.537365: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [03:25:50] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-12 06:49:57 +0000] [353637] [WARNING] Invalid request from ip=80.66.88.204: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-12 15:45:16 +0000] [277922] [WARNING] Invalid request from ip=194.26.135.170: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-12 17:07:10 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:311117)
+[2023-11-12 17:07:10 +0000] [311117] [INFO] Worker exiting (pid: 311117)
+STARTED
+[2023-11-12 17:07:11 +0000] [171585] [ERROR] Worker (pid:311117) was sent SIGKILL! Perhaps out of memory?
+[2023-11-12 17:07:11 +0000] [369674] [INFO] Booting worker with pid: 369674
+2023-11-12 17:07:15.271488: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-12 17:07:15.271557: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-12 17:07:15.271611: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-12 17:07:15.302440: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-12 17:07:17.277247: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-12 23:34:19 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:277922)
+[2023-11-12 23:34:19 +0000] [277922] [INFO] Worker exiting (pid: 277922)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.92481685
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-12 23:34:21 +0000] [171585] [ERROR] Worker (pid:277922) was sent SIGKILL! Perhaps out of memory?
+[2023-11-12 23:34:21 +0000] [373956] [INFO] Booting worker with pid: 373956
+2023-11-12 23:34:26.108136: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-12 23:34:26.108215: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-12 23:34:26.108497: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-12 23:34:26.161783: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-12 23:34:28.269532: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-12 23:34:35.777039: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-13 06:54:26 +0000] [353637] [WARNING] Invalid request from ip=45.227.254.8: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-13 17:54:14 +0000] [326924] [WARNING] Invalid request from ip=62.233.50.179: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-13 23:32:25 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:373956)
+[2023-11-13 23:32:25 +0000] [373956] [INFO] Worker exiting (pid: 373956)
+STARTED
+[2023-11-13 23:32:26 +0000] [171585] [ERROR] Worker (pid:373956) was sent SIGKILL! Perhaps out of memory?
+[2023-11-13 23:32:26 +0000] [391367] [INFO] Booting worker with pid: 391367
+2023-11-13 23:32:29.090821: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-13 23:32:29.090883: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-13 23:32:29.090933: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-13 23:32:29.105661: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-13 23:32:30.997651: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-14 06:38:24 +0000] [326924] [WARNING] Invalid request from ip=193.37.69.150: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-14 08:56:14 +0000] [369674] [WARNING] Invalid request from ip=193.37.69.150: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-14 09:00:53 +0000] [391367] [WARNING] Invalid request from ip=62.233.50.179: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [14:26:12] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-14 18:24:08 +0000] [353637] [WARNING] Invalid request from ip=80.66.88.204: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-14 23:37:26 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:369674)
+[2023-11-14 23:37:26 +0000] [369674] [INFO] Worker exiting (pid: 369674)
+STARTED
+[2023-11-14 23:37:27 +0000] [171585] [ERROR] Worker (pid:369674) was sent SIGKILL! Perhaps out of memory?
+[2023-11-14 23:37:27 +0000] [432140] [INFO] Booting worker with pid: 432140
+2023-11-14 23:37:30.891811: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-14 23:37:30.891874: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-14 23:37:30.891926: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-14 23:37:30.920328: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-14 23:37:32.987656: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-15 00:08:01 +0000] [353637] [WARNING] Invalid request from ip=152.89.198.113: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-15 12:36:48 +0000] [326924] [WARNING] Invalid request from ip=152.89.198.113: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-15 23:37:31 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:353637)
+[2023-11-15 23:37:31 +0000] [353637] [INFO] Worker exiting (pid: 353637)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.77723116
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-15 23:37:32 +0000] [171585] [ERROR] Worker (pid:353637) was sent SIGKILL! Perhaps out of memory?
+[2023-11-15 23:37:32 +0000] [473933] [INFO] Booting worker with pid: 473933
+2023-11-15 23:37:38.180734: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-15 23:37:38.180801: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-15 23:37:38.180984: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-15 23:37:38.334036: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-15 23:37:42.793440: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-16 05:36:42 +0000] [391367] [WARNING] Invalid request from ip=45.227.254.48: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-16 11:32:33 +0000] [473933] [WARNING] Invalid request from ip=43.226.24.171: Invalid HTTP request line: ''
+[2023-11-16 11:32:33 +0000] [391367] [WARNING] Invalid request from ip=43.226.24.171: Invalid HTTP Version: 'RTSP/1.0'
+[2023-11-16 13:31:55 +0000] [473933] [WARNING] Invalid request from ip=185.198.69.31: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-16 23:36:30 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:391367)
+[2023-11-16 23:36:30 +0000] [391367] [INFO] Worker exiting (pid: 391367)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.92481685
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-16 23:36:31 +0000] [171585] [ERROR] Worker (pid:391367) was sent SIGKILL! Perhaps out of memory?
+[2023-11-16 23:36:31 +0000] [506015] [INFO] Booting worker with pid: 506015
+2023-11-16 23:36:35.861188: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-16 23:36:35.861281: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-16 23:36:35.861386: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-16 23:36:35.887300: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-16 23:36:37.952680: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-17 06:18:53 +0000] [432140] [WARNING] Invalid request from ip=45.227.254.48: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-17 12:02:35 +0000] [506015] [WARNING] Invalid request from ip=62.233.50.179: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-17 17:26:18 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:506015)
+[2023-11-17 17:26:18 +0000] [506015] [INFO] Worker exiting (pid: 506015)
+STARTED
+[2023-11-17 17:26:19 +0000] [171585] [ERROR] Worker (pid:506015) was sent SIGKILL! Perhaps out of memory?
+[2023-11-17 17:26:19 +0000] [530962] [INFO] Booting worker with pid: 530962
+2023-11-17 17:26:22.271514: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-17 17:26:22.271571: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-17 17:26:22.271620: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-17 17:26:22.293483: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-17 17:26:24.023217: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-17 23:34:30 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:432140)
+[2023-11-17 23:34:30 +0000] [432140] [INFO] Worker exiting (pid: 432140)
+STARTED
+[2023-11-17 23:34:31 +0000] [171585] [ERROR] Worker (pid:432140) was sent SIGKILL! Perhaps out of memory?
+[2023-11-17 23:34:31 +0000] [535695] [INFO] Booting worker with pid: 535695
+2023-11-17 23:34:36.360991: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-17 23:34:36.361060: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-17 23:34:36.361112: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-17 23:34:36.541122: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-17 23:34:38.145227: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-18 00:16:14 +0000] [535695] [WARNING] Invalid request from ip=62.233.50.179: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-18 09:24:37 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:535695)
+[2023-11-18 09:24:37 +0000] [535695] [INFO] Worker exiting (pid: 535695)
+STARTED
+[2023-11-18 09:24:38 +0000] [171585] [ERROR] Worker (pid:535695) was sent SIGKILL! Perhaps out of memory?
+[2023-11-18 09:24:38 +0000] [543313] [INFO] Booting worker with pid: 543313
+2023-11-18 09:24:41.493988: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-18 09:24:41.494047: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-18 09:24:41.494108: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-18 09:24:41.577543: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-18 09:24:42.962657: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-18 22:07:18 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:473933)
+[2023-11-18 22:07:18 +0000] [473933] [INFO] Worker exiting (pid: 473933)
+STARTED
+[2023-11-18 22:07:18 +0000] [543313] [WARNING] Invalid request from ip=18.223.211.27: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=test'
+[2023-11-18 22:07:19 +0000] [171585] [ERROR] Worker (pid:473933) was sent SIGKILL! Perhaps out of memory?
+[2023-11-18 22:07:19 +0000] [553773] [INFO] Booting worker with pid: 553773
+2023-11-18 22:07:23.916037: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-18 22:07:23.916115: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-18 22:07:23.916183: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-18 22:07:23.931199: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-18 22:07:25.194624: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-18 22:07:57 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:326924)
+[2023-11-18 22:07:57 +0000] [326924] [INFO] Worker exiting (pid: 326924)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.9562568
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.99399763
+sent
+response sent:  <Response 37 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.9374787
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.9241532
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.93901235
+sent
+response sent:  <Response 37 bytes [200 OK]>
+[2023-11-18 22:07:58 +0000] [171585] [ERROR] Worker (pid:326924) was sent SIGKILL! Perhaps out of memory?
+[2023-11-18 22:07:58 +0000] [553784] [INFO] Booting worker with pid: 553784
+2023-11-18 22:08:01.236336: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-18 22:08:01.236398: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-18 22:08:01.236442: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-18 22:08:01.247365: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-18 22:08:03.951558: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-18 22:08:34 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:543313)
+[2023-11-18 22:08:34 +0000] [543313] [INFO] Worker exiting (pid: 543313)
+STARTED
+[2023-11-18 22:08:35 +0000] [171585] [ERROR] Worker (pid:543313) was sent SIGKILL! Perhaps out of memory?
+[2023-11-18 22:08:35 +0000] [553794] [INFO] Booting worker with pid: 553794
+2023-11-18 22:08:37.247387: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-18 22:08:37.247441: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-18 22:08:37.247486: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-18 22:08:37.254782: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-18 22:08:38.324707: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-18 23:33:55 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:553773)
+[2023-11-18 23:33:55 +0000] [553773] [INFO] Worker exiting (pid: 553773)
+STARTED
+[2023-11-18 23:33:56 +0000] [171585] [ERROR] Worker (pid:553773) was sent SIGKILL! Perhaps out of memory?
+[2023-11-18 23:33:56 +0000] [554344] [INFO] Booting worker with pid: 554344
+2023-11-18 23:33:58.511383: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-18 23:33:58.511462: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-18 23:33:58.511511: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-18 23:33:58.525296: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-18 23:33:59.641350: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-19 04:06:24 +0000] [554344] [WARNING] Invalid request from ip=23.92.27.31: Invalid HTTP request line: ''
+[2023-11-19 04:06:24 +0000] [554344] [WARNING] Invalid request from ip=23.92.27.31: Invalid HTTP Version: 'RTSP/1.0'
+[2023-11-19 04:06:37 +0000] [553794] [WARNING] Invalid request from ip=23.92.27.31: Invalid HTTP request line: 'HELP'
+[2023-11-19 04:06:39 +0000] [554344] [WARNING] Invalid request from ip=23.92.27.31: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=beio'
+[2023-11-19 04:06:49 +0000] [554344] [WARNING] Invalid request from ip=23.92.27.31: Invalid HTTP Version: 'SIP/2.0'
+[2023-11-19 04:07:11 +0000] [553794] [WARNING] Invalid request from ip=23.92.27.31: Invalid HTTP request line: "\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie: mstshash=Administrator"
+[2023-11-19 14:36:02 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:553794)
+[2023-11-19 14:36:02 +0000] [553794] [INFO] Worker exiting (pid: 553794)
+STARTED
+[2023-11-19 14:36:03 +0000] [171585] [ERROR] Worker (pid:553794) was sent SIGKILL! Perhaps out of memory?
+[2023-11-19 14:36:03 +0000] [561140] [INFO] Booting worker with pid: 561140
+2023-11-19 14:36:06.491894: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-19 14:36:06.491973: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-19 14:36:06.492328: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-19 14:36:06.570674: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-19 14:36:08.033800: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [21:56:32] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [21:56:55] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-19 23:37:36 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:530962)
+[2023-11-19 23:37:36 +0000] [530962] [INFO] Worker exiting (pid: 530962)
+STARTED
+[2023-11-19 23:37:37 +0000] [171585] [ERROR] Worker (pid:530962) was sent SIGKILL! Perhaps out of memory?
+[2023-11-19 23:37:37 +0000] [564126] [INFO] Booting worker with pid: 564126
+2023-11-19 23:37:42.482155: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-19 23:37:42.482387: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-19 23:37:42.482439: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-19 23:37:42.518238: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-19 23:37:43.782561: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-19 23:37:51.541687: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-20 23:37:23 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:553784)
+[2023-11-20 23:37:23 +0000] [553784] [INFO] Worker exiting (pid: 553784)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.9064673
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.943941
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-20 23:37:24 +0000] [171585] [ERROR] Worker (pid:553784) was sent SIGKILL! Perhaps out of memory?
+[2023-11-20 23:37:24 +0000] [580120] [INFO] Booting worker with pid: 580120
+2023-11-20 23:37:27.164635: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-20 23:37:27.164691: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-20 23:37:27.164740: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-20 23:37:27.188509: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-20 23:37:28.830853: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-20 23:37:37.681537: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-21 17:34:11 +0000] [554344] [WARNING] Invalid request from ip=50.31.21.5: Invalid HTTP request line: ''
+[2023-11-21 17:34:11 +0000] [561140] [WARNING] Invalid request from ip=50.31.21.5: Invalid HTTP Version: 'RTSP/1.0'
+[2023-11-21 17:34:36 +0000] [554344] [WARNING] Invalid request from ip=50.31.21.5: Invalid HTTP request line: 'HELP'
+[2023-11-21 17:35:12 +0000] [561140] [WARNING] Invalid request from ip=50.31.21.5: Invalid HTTP Version: 'SIP/2.0'
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-21 23:33:03 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:561140)
+[2023-11-21 23:33:03 +0000] [561140] [INFO] Worker exiting (pid: 561140)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.9345667
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.985921
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-21 23:33:04 +0000] [171585] [ERROR] Worker (pid:561140) was sent SIGKILL! Perhaps out of memory?
+[2023-11-21 23:33:04 +0000] [595223] [INFO] Booting worker with pid: 595223
+2023-11-21 23:33:07.883315: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-21 23:33:07.883374: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-21 23:33:07.883422: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-21 23:33:07.924543: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-21 23:33:09.375929: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-22 17:32:54 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:595223)
+[2023-11-22 17:32:54 +0000] [595223] [INFO] Worker exiting (pid: 595223)
+STARTED
+[2023-11-22 17:32:55 +0000] [171585] [ERROR] Worker (pid:595223) was sent SIGKILL! Perhaps out of memory?
+[2023-11-22 17:32:55 +0000] [607216] [INFO] Booting worker with pid: 607216
+2023-11-22 17:32:57.885404: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-22 17:32:57.885654: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-22 17:32:57.885702: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-22 17:32:57.900276: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-22 17:32:59.076544: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-22 23:35:11 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:564126)
+[2023-11-22 23:35:11 +0000] [564126] [INFO] Worker exiting (pid: 564126)
+STARTED
+[2023-11-22 23:35:12 +0000] [171585] [ERROR] Worker (pid:564126) was sent SIGKILL! Perhaps out of memory?
+[2023-11-22 23:35:12 +0000] [615697] [INFO] Booting worker with pid: 615697
+2023-11-22 23:35:16.319604: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-22 23:35:16.319669: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-22 23:35:16.319717: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-22 23:35:16.333157: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-22 23:35:17.518838: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [20:15:02] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-23 21:24:01 +0000] [580120] [WARNING] Invalid request from ip=193.29.13.175: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-23 23:32:37 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:580120)
+[2023-11-23 23:32:37 +0000] [580120] [INFO] Worker exiting (pid: 580120)
+STARTED
+[2023-11-23 23:32:38 +0000] [171585] [ERROR] Worker (pid:580120) was sent SIGKILL! Perhaps out of memory?
+[2023-11-23 23:32:38 +0000] [675856] [INFO] Booting worker with pid: 675856
+2023-11-23 23:32:46.361441: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-23 23:32:46.361503: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-23 23:32:46.361695: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-23 23:32:46.678306: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-23 23:32:50.476849: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-23 23:32:59.333443: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-24 08:21:30 +0000] [554344] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-24 09:11:08 +0000] [554344] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-24 09:51:52 +0000] [607216] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-24 10:31:07 +0000] [607216] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-24 10:45:59 +0000] [675856] [WARNING] Invalid request from ip=80.66.88.204: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-24 14:42:06 +0000] [554344] [WARNING] Invalid request from ip=62.122.184.188: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-24 15:58:31 +0000] [675856] [WARNING] Invalid request from ip=62.122.184.188: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-24 23:34:26 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:615697)
+[2023-11-24 23:34:26 +0000] [615697] [INFO] Worker exiting (pid: 615697)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.97064304
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-24 23:34:27 +0000] [171585] [ERROR] Worker (pid:615697) was sent SIGKILL! Perhaps out of memory?
+[2023-11-24 23:34:27 +0000] [688685] [INFO] Booting worker with pid: 688685
+2023-11-24 23:34:33.495087: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-24 23:34:33.495355: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-24 23:34:33.495832: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-24 23:34:33.633642: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-24 23:34:35.181037: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-25 19:32:03 +0000] [607216] [WARNING] Invalid request from ip=194.165.16.72: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-25 20:33:58 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:554344)
+[2023-11-25 20:33:58 +0000] [554344] [INFO] Worker exiting (pid: 554344)
+STARTED
+[2023-11-25 20:33:59 +0000] [171585] [ERROR] Worker (pid:554344) was sent SIGKILL! Perhaps out of memory?
+[2023-11-25 20:33:59 +0000] [700816] [INFO] Booting worker with pid: 700816
+2023-11-25 20:34:05.491257: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-25 20:34:05.491317: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-25 20:34:05.491400: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-25 20:34:05.631258: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-25 20:34:07.543399: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-25 20:34:16.376301: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-25 20:41:26 +0000] [607216] [WARNING] Invalid request from ip=45.93.201.57: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-25 23:08:20 +0000] [700816] [WARNING] Invalid request from ip=179.60.147.47: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-25 23:33:31 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:700816)
+[2023-11-25 23:33:31 +0000] [700816] [INFO] Worker exiting (pid: 700816)
+STARTED
+[2023-11-25 23:33:32 +0000] [171585] [ERROR] Worker (pid:700816) was sent SIGKILL! Perhaps out of memory?
+[2023-11-25 23:33:32 +0000] [702990] [INFO] Booting worker with pid: 702990
+2023-11-25 23:33:34.338353: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-25 23:33:34.338431: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-25 23:33:34.338482: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-25 23:33:34.351863: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-25 23:33:35.480775: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-26 05:48:02 +0000] [675856] [WARNING] Invalid request from ip=179.60.147.47: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-26 13:19:11 +0000] [607216] [WARNING] Invalid request from ip=179.60.147.47: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-26 15:57:06 +0000] [702990] [WARNING] Invalid request from ip=45.93.201.57: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-26 16:02:37 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:688685)
+[2023-11-26 16:02:37 +0000] [688685] [INFO] Worker exiting (pid: 688685)
+STARTED
+[2023-11-26 16:02:38 +0000] [171585] [ERROR] Worker (pid:688685) was sent SIGKILL! Perhaps out of memory?
+[2023-11-26 16:02:38 +0000] [712472] [INFO] Booting worker with pid: 712472
+2023-11-26 16:02:42.006578: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-26 16:02:42.006636: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-26 16:02:42.006702: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-26 16:02:42.023423: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-26 16:02:43.163037: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-26 22:54:12 +0000] [607216] [WARNING] Invalid request from ip=193.37.69.150: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-26 23:16:11 +0000] [607216] [WARNING] Invalid request from ip=194.165.16.72: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-26 23:36:36 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:607216)
+[2023-11-26 23:36:36 +0000] [607216] [INFO] Worker exiting (pid: 607216)
+STARTED
+[2023-11-26 23:36:37 +0000] [171585] [ERROR] Worker (pid:607216) was sent SIGKILL! Perhaps out of memory?
+[2023-11-26 23:36:37 +0000] [718109] [INFO] Booting worker with pid: 718109
+2023-11-26 23:36:40.389448: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-26 23:36:40.389502: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-26 23:36:40.389746: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-26 23:36:40.405850: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-26 23:36:42.890975: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-27 08:12:15 +0000] [702990] [WARNING] Invalid request from ip=62.233.50.179: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-27 09:35:34 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:718109)
+[2023-11-27 09:35:34 +0000] [718109] [INFO] Worker exiting (pid: 718109)
+STARTED
+[2023-11-27 09:35:35 +0000] [171585] [ERROR] Worker (pid:718109) was sent SIGKILL! Perhaps out of memory?
+[2023-11-27 09:35:35 +0000] [723964] [INFO] Booting worker with pid: 723964
+2023-11-27 09:35:37.465815: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-27 09:35:37.465895: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-27 09:35:37.465949: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-27 09:35:37.480654: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-27 09:35:38.560489: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-27 17:22:13 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:723964)
+[2023-11-27 17:22:13 +0000] [723964] [INFO] Worker exiting (pid: 723964)
+STARTED
+[2023-11-27 17:22:14 +0000] [171585] [ERROR] Worker (pid:723964) was sent SIGKILL! Perhaps out of memory?
+[2023-11-27 17:22:14 +0000] [727443] [INFO] Booting worker with pid: 727443
+2023-11-27 17:22:16.537106: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-27 17:22:16.537162: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-27 17:22:16.537216: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-27 17:22:16.552798: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-27 17:22:17.587152: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-27 22:20:21 +0000] [702990] [WARNING] Invalid request from ip=176.113.115.65: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-27 23:35:53 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:712472)
+[2023-11-27 23:35:53 +0000] [712472] [INFO] Worker exiting (pid: 712472)
+STARTED
+[2023-11-27 23:35:54 +0000] [171585] [ERROR] Worker (pid:712472) was sent SIGKILL! Perhaps out of memory?
+[2023-11-27 23:35:54 +0000] [729695] [INFO] Booting worker with pid: 729695
+2023-11-27 23:35:56.196800: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-27 23:35:56.196855: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-27 23:35:56.196908: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-27 23:35:56.210798: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-27 23:35:57.277331: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-28 08:35:03 +0000] [727443] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-28 08:42:11 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:729695)
+[2023-11-28 08:42:11 +0000] [729695] [INFO] Worker exiting (pid: 729695)
+STARTED
+[2023-11-28 08:42:12 +0000] [171585] [ERROR] Worker (pid:729695) was sent SIGKILL! Perhaps out of memory?
+[2023-11-28 08:42:12 +0000] [735173] [INFO] Booting worker with pid: 735173
+2023-11-28 08:42:14.156327: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-28 08:42:14.156385: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-28 08:42:14.156440: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-28 08:42:14.169201: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-28 08:42:15.180383: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-28 10:21:49 +0000] [675856] [WARNING] Invalid request from ip=193.37.69.150: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-28 10:30:20 +0000] [727443] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [16:48:23] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-28 20:12:10 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:675856)
+[2023-11-28 20:12:10 +0000] [675856] [INFO] Worker exiting (pid: 675856)
+STARTED
+[2023-11-28 20:12:11 +0000] [171585] [ERROR] Worker (pid:675856) was sent SIGKILL! Perhaps out of memory?
+[2023-11-28 20:12:11 +0000] [742066] [INFO] Booting worker with pid: 742066
+2023-11-28 20:12:16.281734: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-28 20:12:16.283030: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-28 20:12:16.283122: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-28 20:12:16.364422: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-28 20:12:18.766631: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-28 20:12:25.732703: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16777216 exceeds 10% of free system memory.
+[2023-11-28 20:56:03 +0000] [727443] [WARNING] Invalid request from ip=185.161.248.148: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-28 23:02:28 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:742066)
+[2023-11-28 23:02:28 +0000] [742066] [INFO] Worker exiting (pid: 742066)
+STARTED
+[2023-11-28 23:02:29 +0000] [171585] [ERROR] Worker (pid:742066) was sent SIGKILL! Perhaps out of memory?
+[2023-11-28 23:02:29 +0000] [744040] [INFO] Booting worker with pid: 744040
+2023-11-28 23:02:31.970736: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-28 23:02:31.970790: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-28 23:02:31.970851: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-28 23:02:31.986969: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-28 23:02:33.033668: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-28 23:15:33 +0000] [744040] [WARNING] Invalid request from ip=109.107.183.105: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-28 23:32:23 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:702990)
+[2023-11-28 23:32:23 +0000] [702990] [INFO] Worker exiting (pid: 702990)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.8933899
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-28 23:32:24 +0000] [171585] [ERROR] Worker (pid:702990) was sent SIGKILL! Perhaps out of memory?
+[2023-11-28 23:32:24 +0000] [744316] [INFO] Booting worker with pid: 744316
+2023-11-28 23:32:26.072110: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-28 23:32:26.072167: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-28 23:32:26.072244: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-28 23:32:26.088591: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-28 23:32:27.271278: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-29 09:15:53 +0000] [727443] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-29 10:04:46 +0000] [744316] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-29 10:51:24 +0000] [744316] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-29 14:23:49 +0000] [744316] [WARNING] Invalid request from ip=109.107.183.105: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-29 19:31:22 +0000] [744040] [WARNING] Invalid request from ip=185.91.127.118: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-29 19:35:32 +0000] [735173] [WARNING] Invalid request from ip=3.215.67.136: Invalid HTTP request line: 'GNUTELLA CONNECT/0.6'
+[2023-11-29 19:35:32 +0000] [727443] [WARNING] Invalid request from ip=3.215.67.136: Invalid HTTP request line: 'GNUTELLA CONNECT/0.4'
+[2023-11-29 19:35:32 +0000] [727443] [WARNING] Invalid request from ip=3.215.67.136: Invalid HTTP method: 'Secure'
+[2023-11-29 19:35:32 +0000] [744040] [WARNING] Invalid request from ip=3.215.67.136: Invalid HTTP method: 'some'
+[2023-11-29 19:35:47 +0000] [735173] [WARNING] Invalid request from ip=3.215.67.136: Invalid HTTP request line: ''
+[2023-11-29 19:55:34 +0000] [727443] [WARNING] Invalid request from ip=3.215.67.136: Invalid HTTP Header: 'CONTENT-LENGTH'
+[2023-11-29 23:39:25 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:744316)
+[2023-11-29 23:39:25 +0000] [744316] [INFO] Worker exiting (pid: 744316)
+STARTED
+[2023-11-29 23:39:26 +0000] [171585] [ERROR] Worker (pid:744316) was sent SIGKILL! Perhaps out of memory?
+[2023-11-29 23:39:26 +0000] [760561] [INFO] Booting worker with pid: 760561
+2023-11-29 23:39:28.417826: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-29 23:39:28.417896: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-29 23:39:28.417987: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-29 23:39:28.433222: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-29 23:39:29.639681: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-30 01:59:46 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:744040)
+[2023-11-30 01:59:46 +0000] [744040] [INFO] Worker exiting (pid: 744040)
+STARTED
+[2023-11-30 01:59:47 +0000] [171585] [ERROR] Worker (pid:744040) was sent SIGKILL! Perhaps out of memory?
+[2023-11-30 01:59:47 +0000] [761787] [INFO] Booting worker with pid: 761787
+2023-11-30 01:59:49.142586: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-30 01:59:49.142638: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-30 01:59:49.142691: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-30 01:59:49.155251: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-30 01:59:50.239878: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [02:07:51] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-30 03:33:16 +0000] [760561] [WARNING] Invalid request from ip=109.107.183.85: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-30 04:31:22 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:735173)
+[2023-11-30 04:31:22 +0000] [735173] [INFO] Worker exiting (pid: 735173)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.96487075
+sent
+response sent:  <Response 38 bytes [200 OK]>
+Received audio data
+tempfile created
+0
+response received
+0 0.8276434
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-30 04:31:23 +0000] [171585] [ERROR] Worker (pid:735173) was sent SIGKILL! Perhaps out of memory?
+[2023-11-30 04:31:23 +0000] [763948] [INFO] Booting worker with pid: 763948
+2023-11-30 04:31:26.235893: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-30 04:31:26.235948: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-30 04:31:26.235998: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-30 04:31:26.248818: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-30 04:31:27.318439: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [04:42:54] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-11-30 05:13:43 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:727443)
+[2023-11-30 05:13:43 +0000] [727443] [INFO] Worker exiting (pid: 727443)
+STARTED
+Received audio data
+tempfile created
+0
+response received
+0 0.9153282
+sent
+response sent:  <Response 38 bytes [200 OK]>
+[2023-11-30 05:13:45 +0000] [171585] [ERROR] Worker (pid:727443) was sent SIGKILL! Perhaps out of memory?
+[2023-11-30 05:13:45 +0000] [764564] [INFO] Booting worker with pid: 764564
+2023-11-30 05:13:46.916251: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-30 05:13:46.916305: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-30 05:13:46.916359: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-30 05:13:46.928483: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-30 05:13:47.995413: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-30 08:09:53 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:763948)
+[2023-11-30 08:09:53 +0000] [763948] [INFO] Worker exiting (pid: 763948)
+STARTED
+[2023-11-30 08:09:54 +0000] [171585] [ERROR] Worker (pid:763948) was sent SIGKILL! Perhaps out of memory?
+[2023-11-30 08:09:54 +0000] [766190] [INFO] Booting worker with pid: 766190
+2023-11-30 08:09:56.248645: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-30 08:09:56.248708: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-30 08:09:56.248782: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-30 08:09:56.264874: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-30 08:09:57.317949: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-11-30 10:29:38 +0000] [761787] [WARNING] Invalid request from ip=62.233.50.179: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-11-30 23:32:12 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:761787)
+[2023-11-30 23:32:12 +0000] [761787] [INFO] Worker exiting (pid: 761787)
+STARTED
+[2023-11-30 23:32:13 +0000] [171585] [ERROR] Worker (pid:761787) was sent SIGKILL! Perhaps out of memory?
+[2023-11-30 23:32:13 +0000] [773297] [INFO] Booting worker with pid: 773297
+2023-11-30 23:32:15.162362: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-11-30 23:32:15.162416: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-11-30 23:32:15.162465: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-11-30 23:32:15.177001: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-30 23:32:16.160330: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-12-01 03:49:19 +0000] [773297] [WARNING] Invalid request from ip=194.165.16.72: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-12-01 23:37:30 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:760561)
+[2023-12-01 23:37:30 +0000] [760561] [INFO] Worker exiting (pid: 760561)
+STARTED
+success
+[2023-12-01 23:37:31 +0000] [171585] [ERROR] Worker (pid:760561) was sent SIGKILL! Perhaps out of memory?
+[2023-12-01 23:37:31 +0000] [785524] [INFO] Booting worker with pid: 785524
+2023-12-01 23:37:35.044904: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-01 23:37:35.044966: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-01 23:37:35.045027: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-01 23:37:35.129786: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-01 23:37:37.010746: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-12-02 01:27:39 +0000] [764564] [WARNING] Invalid request from ip=141.98.11.107: Invalid HTTP request line: 'SSH-2.0-libssh2_1.8.2'
+[2023-12-02 09:09:04 +0000] [764564] [WARNING] Invalid request from ip=45.227.254.8: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-12-02 17:41:40 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:773297)
+[2023-12-02 17:41:40 +0000] [773297] [INFO] Worker exiting (pid: 773297)
+STARTED
+[2023-12-02 17:41:41 +0000] [171585] [ERROR] Worker (pid:773297) was sent SIGKILL! Perhaps out of memory?
+[2023-12-02 17:41:41 +0000] [797266] [INFO] Booting worker with pid: 797266
+2023-12-02 17:41:44.538595: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-02 17:41:44.538668: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-02 17:41:44.538720: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-02 17:41:44.560426: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-02 17:41:45.989314: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-12-02 23:34:15 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:785524)
+[2023-12-02 23:34:15 +0000] [785524] [INFO] Worker exiting (pid: 785524)
+STARTED
+[2023-12-02 23:34:16 +0000] [171585] [ERROR] Worker (pid:785524) was sent SIGKILL! Perhaps out of memory?
+[2023-12-02 23:34:16 +0000] [800712] [INFO] Booting worker with pid: 800712
+2023-12-02 23:34:18.357847: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-02 23:34:18.357901: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-02 23:34:18.357952: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-02 23:34:18.370573: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-02 23:34:19.372056: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-12-03 23:35:08 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:766190)
+[2023-12-03 23:35:08 +0000] [766190] [INFO] Worker exiting (pid: 766190)
+STARTED
+[2023-12-03 23:35:09 +0000] [171585] [ERROR] Worker (pid:766190) was sent SIGKILL! Perhaps out of memory?
+[2023-12-03 23:35:09 +0000] [813075] [INFO] Booting worker with pid: 813075
+2023-12-03 23:35:13.045542: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 23:35:13.045621: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 23:35:13.045712: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 23:35:13.066418: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 23:35:14.302856: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-12-04 03:13:05 +0000] [800712] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-12-04 10:02:33 +0000] [800712] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-12-04 10:50:53 +0000] [764564] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-12-04 11:32:49 +0000] [797266] [WARNING] Invalid request from ip=212.70.149.146: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+/usr/local/lib/python3.10/dist-packages/xgboost/core.py:160: UserWarning: [16:59:49] WARNING: /workspace/src/common/error_msg.h:80: If you are loading a serialized model (like pickle in Python, RDS in R) or
+configuration generated by an older version of XGBoost, please export the model by calling
+`Booster.save_model` from that version first, then load it back in current version. See:
+
+    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+
+for more details about differences between saving model and serializing.
+
+  warnings.warn(smsg, UserWarning)
+/root/CoughScan/server/ai/cough/feature.py:73: UserWarning: PySoundFile failed. Trying audioread instead.
+  waveform, _ = librosa.load(filename, sr=16000, mono=True, res_type="kaiser_fast")
+/usr/local/lib/python3.10/dist-packages/librosa/core/audio.py:183: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+[2023-12-04 23:32:43 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:800712)
+[2023-12-04 23:32:43 +0000] [800712] [INFO] Worker exiting (pid: 800712)
+STARTED
+success
+[2023-12-04 23:32:44 +0000] [171585] [ERROR] Worker (pid:800712) was sent SIGKILL! Perhaps out of memory?
+[2023-12-04 23:32:44 +0000] [828050] [INFO] Booting worker with pid: 828050
+2023-12-04 23:32:46.438770: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-04 23:32:46.438814: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-04 23:32:46.438863: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-04 23:32:46.452864: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-04 23:32:47.469119: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-12-05 00:09:20 +0000] [813075] [WARNING] Invalid request from ip=194.165.16.72: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-12-05 09:24:16 +0000] [797266] [WARNING] Invalid request from ip=62.204.41.210: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-12-05 23:37:00 +0000] [171585] [CRITICAL] WORKER TIMEOUT (pid:797266)
+[2023-12-05 23:37:00 +0000] [797266] [INFO] Worker exiting (pid: 797266)
+STARTED
+[2023-12-05 23:37:01 +0000] [171585] [ERROR] Worker (pid:797266) was sent SIGKILL! Perhaps out of memory?
+[2023-12-05 23:37:01 +0000] [843112] [INFO] Booting worker with pid: 843112
+2023-12-05 23:37:04.250951: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-05 23:37:04.251008: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-05 23:37:04.251063: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-05 23:37:04.275728: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-05 23:37:05.491240: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-12-06 06:49:04 +0000] [843112] [WARNING] Invalid request from ip=194.165.16.10: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-12-06 08:38:48 +0000] [171585] [INFO] Handling signal: hup
+[2023-12-06 08:38:48 +0000] [171585] [INFO] Hang up: Master
+[2023-12-06 08:38:49 +0000] [872917] [INFO] Booting worker with pid: 872917
+[2023-12-06 08:38:49 +0000] [872922] [INFO] Booting worker with pid: 872922
+[2023-12-06 08:38:49 +0000] [872923] [INFO] Booting worker with pid: 872923
+[2023-12-06 08:38:49 +0000] [171585] [INFO] Handling signal: term
+[2023-12-06 08:38:49 +0000] [872932] [INFO] Booting worker with pid: 872932
+[2023-12-06 08:38:49 +0000] [171585] [ERROR] Worker (pid:813075) was sent SIGHUP!
+[2023-12-06 08:38:49 +0000] [171585] [ERROR] Worker (pid:843112) was sent SIGHUP!
+[2023-12-06 08:38:49 +0000] [171585] [ERROR] Worker (pid:828050) was sent SIGHUP!
+[2023-12-06 08:38:49 +0000] [171585] [ERROR] Worker (pid:764564) was sent SIGHUP!
+2023-12-06 08:38:56.445246: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-06 08:38:56.445315: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-06 08:38:56.445363: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-06 08:38:56.445504: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-06 08:38:56.445521: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-06 08:38:56.445541: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-06 08:38:56.445612: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-06 08:38:56.445626: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-06 08:38:56.445647: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-06 08:38:56.445784: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-06 08:38:56.445807: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-06 08:38:56.445828: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-06 08:38:56.532601: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-06 08:38:56.532601: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-06 08:38:56.533540: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-06 08:38:56.533540: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-06 08:39:00.401519: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-12-06 08:39:00.401950: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-12-06 08:39:00.406453: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-12-06 08:39:00.407195: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2023-12-06 08:39:19 +0000] [171585] [INFO] Shutting down: Master
