@@ -14,7 +14,7 @@ User must answer several questions regarding their symptoms and general informat
 ## Cough Test
 User must cough into their microphone and answer 3 simple questions. This test works best when sickness is given, so thats why taking the symptoms test beforehand is advised.
 
-##Open Source Usage:
+## Open Source Usage:
 This app was created using only open-source material so it can be cloned directly and run. PM2 was used to run the sveltekit application and gunicorn with flask running in a tmux sessions was used for the flask api. To run the app clone the repo and run ```chmod +x run/sh``` and then ```./run.sh```. To terminate, do the same but with ```terminate.sh```
 
 Docker image is currently being created. Coming soon.
