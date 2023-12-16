@@ -2,7 +2,7 @@
 
 ## Winner of the 2023 Congressional App Challenge!
 
-Now available at [coughscan.net](https://coughscan.net)!
+Now NOT available at [coughscan.net](https://coughscan.net)!
 
 Android + web app that leverages a two neural network solution to diagnosing COVID-19 from almost any device, anywhere.
 
